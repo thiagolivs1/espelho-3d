@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espelho 3D</title>
+<meta name="description" content="Tabelas de vendas em 3D: maquete, plantas e valores de tabela dos empreendimentos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="app/ui/styles.css">
+<style>
+  body.capa { height: auto; }
+  .capa main { max-width: 760px; margin: 0 auto; padding: 48px 20px; }
+  .capa h1 { font: 700 34px var(--display); margin: 0 0 6px; }
+  .capa .sub { color: var(--mute); margin: 0 0 28px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .emp { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .emp img { display: block; width: 100%; height: 150px; object-fit: cover; background: #1c2329; }
+  .emp div { padding: 14px 16px; }
+  .emp b { display: block; font: 600 18px var(--display); }
+  .emp span { font-size: 13px; color: var(--mute); }
+  .emp:hover { border-color: var(--marca); }
+</style>
+</head>
+<body class="capa">
+<main>
+  <h1>Espelho 3D</h1>
+  <p class="sub">Tabelas de vendas em 3D: maquete, plantas e valores de tabela.</p>
+  <div class="cards">
+    <!-- Um card por empreendimento publicado. -->
+    <a class="emp" href="fantastique-prime-2/">
+      <img src="fantastique-prime-2/img/logo-fantastique.jpg" alt="Fantastique Prime II">
+      <div><b>Fantastique Prime II</b><span>FAN Construções · Carlito Pamplona, Fortaleza (CE)</span></div>
+    </a>
+  </div>
+</main>
+</body>
+</html>

@@ -1,2 +1,4 @@
 node_modules/
 .DS_Store
+.claude/
+supabase/seed/*-status.sql
