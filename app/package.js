@@ -59,5 +59,10 @@ export function validatePackage(pkg) {
   for (const t of torres) for (let andar = 0; andar < pkg.torres.pavimentos; andar++)
     for (let col = 1; col <= pkg.torres.colunas; col++) codigos.add(tipologiaFor(t.numero, andar * 100 + col).codigo);
   for (const c of codigos) if (!pkg.tipologias[c]?.planta) erros.push(`tipologias['${c}'] sem planta`);
+  for (const [c, t] of Object.entries(pkg.tipologias)) if (!t.perspectivas?.length) erros.push(`tipologias['${c}'] sem perspectivas`);
+  for (const [i, p] of (pkg.pontosLazer || []).entries()) {
+    if (!p.nome || !Array.isArray(p.px) || p.px.length !== 2) erros.push(`pontosLazer[${i}]: nome ou posição ausente`);
+    if (!p.imagens?.length) erros.push(`pontosLazer[${i}] (${p.nome}): ponto de lazer sem imagem`);
+  }
   return erros;
 }

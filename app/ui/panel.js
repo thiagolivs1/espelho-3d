@@ -48,14 +48,17 @@ export function renderDetail(u, { pkg, base, logado }) {
     <div class="specs">
       <div><b>${formatArea(u.area).replace(' m²', '')}</b><span>m² privativos</span></div>
       <div><b>${u.quartos}</b><span>quartos</span></div>
-      <div><b>1</b><span>vaga</span></div>
+      ${u.vaga ? `<div><b>${u.vaga.numero}</b><span>vaga · ${esc(u.vaga.nivel)}</span></div>` : '<div><b>1</b><span>vaga</span></div>'}
     </div>
     <div class="price">${formatBRL(u.venda)}<small>${formatBRL(u.venda / u.area)} por m² · valor de tabela</small></div>
     ${aviso}
     ${tip.planta ? `<figure class="planta"><button class="pl-open" type="button" data-src="${base}${esc(tip.planta)}" data-legenda="${esc(tip.legenda)}">
       <img src="${base}${esc(tip.planta)}" alt="Planta ${esc(tip.legenda)}" loading="lazy"></button>
       <figcaption>${esc(tip.legenda)} · toque para ampliar</figcaption></figure>` : ''}
+    ${tip.perspectivas?.length ? `<div class="persp"><p class="typo">Perspectivas do apartamento</p><div class="persp-row">${tip.perspectivas.map((src, i) =>
+      `<button type="button" class="persp-b" data-persp="${i}" aria-label="Perspectiva ${i + 1}"><img src="${base}${esc(src)}" alt="" loading="lazy"></button>`).join('')}</div></div>` : ''}
     <div class="actions">
+      <button class="btn ghost" type="button" data-vista>Ver a vista desta unidade</button>
       <a class="btn" href="${base}${esc(pkg.simulador)}#${u.key}" target="_blank" rel="noopener">Simular fluxo desta unidade</a>
       <button class="btn ghost" type="button" data-copiar>Copiar link da unidade</button>
     </div>`;

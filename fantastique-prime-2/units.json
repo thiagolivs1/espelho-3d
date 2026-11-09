@@ -10,7 +10,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 80,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -21,7 +25,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B-PNE Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 63,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -32,7 +40,11 @@
    "venda": 330000,
    "avaliacao": 367000,
    "tipologia": "B-PNE Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 62,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -43,7 +55,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 81,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -54,7 +70,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 82,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -65,7 +85,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B-PNE Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 73,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -76,7 +100,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B-PNE Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 72,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -87,7 +115,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 83,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -98,7 +130,11 @@
    "venda": 348382,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 69,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -109,7 +145,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 65,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -120,7 +160,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 71,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -131,7 +175,11 @@
    "venda": 345032,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 85,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -142,7 +190,11 @@
    "venda": 334982,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 84,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -153,7 +205,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 66,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -164,7 +220,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 69,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -175,7 +235,11 @@
    "venda": 340007,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 68,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -186,7 +250,11 @@
    "venda": 353868,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 76,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -197,7 +265,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 68,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -208,7 +280,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 3,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -219,7 +295,11 @@
    "venda": 350465,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 77,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -230,7 +310,11 @@
    "venda": 340258,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 78,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -241,7 +325,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 4,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -252,7 +340,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 5,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -263,7 +355,11 @@
    "venda": 345361,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 79,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -274,7 +370,11 @@
    "venda": 359354,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 70,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -285,7 +385,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 6,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -296,7 +400,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 250,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -307,7 +415,11 @@
    "venda": 355899,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 71,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -318,7 +430,11 @@
    "venda": 345533,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 72,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -329,7 +445,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 249,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -340,7 +460,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B-PNE",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 61,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -351,7 +475,11 @@
    "venda": 350716,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 73,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -362,7 +490,11 @@
    "venda": 364840,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 47,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -373,7 +505,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 75,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -384,7 +520,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 74,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -395,7 +535,11 @@
    "venda": 361332,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 49,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -406,7 +550,11 @@
    "venda": 350808,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 50,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -417,7 +565,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 51,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -428,7 +580,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 52,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -439,7 +595,11 @@
    "venda": 356070,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 48,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -450,7 +610,11 @@
    "venda": 370327,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 146,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -461,7 +625,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 143,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -472,7 +640,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 147,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -483,7 +655,11 @@
    "venda": 366766,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 145,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -494,7 +670,11 @@
    "venda": 356083,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 144,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -505,7 +685,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 148,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -516,7 +700,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 149,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -527,7 +715,11 @@
    "venda": 361425,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 3,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -538,7 +730,11 @@
    "venda": 375813,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 162,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -549,7 +745,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 161,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -560,7 +760,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 160,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -571,7 +775,11 @@
    "venda": 372200,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 159,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -582,7 +790,11 @@
    "venda": 361359,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 158,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -593,7 +805,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 157,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -604,7 +820,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 1,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -615,7 +835,11 @@
    "venda": 366779,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 2,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -626,7 +850,11 @@
    "venda": 381299,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 38,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -637,7 +865,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 37,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -648,7 +880,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 163,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 1,
@@ -659,7 +895,11 @@
    "venda": 377633,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 39,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -670,7 +910,11 @@
    "venda": 366634,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 40,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -681,7 +925,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 41,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -692,7 +940,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 42,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -703,7 +955,11 @@
    "venda": 372134,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 43,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -714,7 +970,11 @@
    "venda": 386786,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 35,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -725,7 +985,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 70,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -736,7 +1000,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 36,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -747,7 +1015,11 @@
    "venda": 383067,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 46,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -758,7 +1030,11 @@
    "venda": 371909,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 59,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -769,7 +1045,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 44,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -780,7 +1060,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 45,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -791,7 +1075,11 @@
    "venda": 377488,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 47,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -802,7 +1090,11 @@
    "venda": 392272,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 27,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -813,7 +1105,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 31,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -824,7 +1120,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 32,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -835,7 +1135,11 @@
    "venda": 388500,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 28,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -846,7 +1150,11 @@
    "venda": 377185,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 29,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -857,7 +1165,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 33,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -868,7 +1180,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 34,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -879,7 +1195,11 @@
    "venda": 382842,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 30,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -890,7 +1210,11 @@
    "venda": 397758,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 19,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -901,7 +1225,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 23,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -912,7 +1240,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 24,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -923,7 +1255,11 @@
    "venda": 393934,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 20,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -934,7 +1270,11 @@
    "venda": 382460,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 21,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -945,7 +1285,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 25,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -956,7 +1300,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 26,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -967,7 +1315,11 @@
    "venda": 388197,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 22,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -978,7 +1330,11 @@
    "venda": 403245,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 11,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -989,7 +1345,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 15,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1000,7 +1360,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 16,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1011,7 +1375,11 @@
    "venda": 399367,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 12,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1022,7 +1390,11 @@
    "venda": 387735,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 13,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1033,7 +1405,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 17,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1044,7 +1420,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 18,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1055,7 +1435,11 @@
    "venda": 393551,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 14,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1066,7 +1450,11 @@
    "venda": 408731,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 122,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1077,7 +1465,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 123,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1088,7 +1480,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 124,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1099,7 +1495,11 @@
    "venda": 404801,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 125,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1110,7 +1510,11 @@
    "venda": 393011,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 126,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1121,7 +1525,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 127,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1132,7 +1540,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 128,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1143,7 +1555,11 @@
    "venda": 398906,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 129,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1154,7 +1570,11 @@
    "venda": 414217,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 130,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1165,7 +1585,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 183,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1176,7 +1600,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 182,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1187,7 +1615,11 @@
    "venda": 410235,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 184,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1198,7 +1630,11 @@
    "venda": 398286,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 74,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1209,7 +1645,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 185,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1220,7 +1660,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 60,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1231,7 +1675,11 @@
    "venda": 404260,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 64,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1242,7 +1690,11 @@
    "venda": 419704,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 7,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1253,7 +1705,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 8,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1264,7 +1720,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 9,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1275,7 +1735,11 @@
    "venda": 415668,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 269,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1286,7 +1750,11 @@
    "venda": 403561,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 2,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1297,7 +1765,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 268,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1308,7 +1780,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 267,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1319,7 +1795,11 @@
    "venda": 409615,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 1,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1330,7 +1810,11 @@
    "venda": 425190,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 67,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1341,7 +1825,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 10,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1352,7 +1840,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 48,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1363,7 +1855,11 @@
    "venda": 421102,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 49,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1374,7 +1870,11 @@
    "venda": 408837,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 50,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1385,7 +1885,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 51,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1396,7 +1900,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 52,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1407,7 +1915,11 @@
    "venda": 414969,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 53,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1418,7 +1930,11 @@
    "venda": 430676,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 54,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1429,7 +1945,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 55,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1440,7 +1960,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 56,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1451,7 +1975,11 @@
    "venda": 426535,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 57,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1462,7 +1990,11 @@
    "venda": 414112,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 58,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1473,7 +2005,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 84,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1484,7 +2020,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 85,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1495,7 +2035,11 @@
    "venda": 420324,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 83,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1506,7 +2050,11 @@
    "venda": 436163,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 78,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1517,7 +2065,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 79,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1528,7 +2080,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 80,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1539,7 +2095,11 @@
    "venda": 431969,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 77,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1550,7 +2110,11 @@
    "venda": 419387,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 76,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1561,7 +2125,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 81,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1572,7 +2140,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 82,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 1,
@@ -1583,7 +2155,11 @@
    "venda": 425678,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 75,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -1594,7 +2170,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 125,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1605,7 +2185,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 124,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1616,7 +2200,11 @@
    "venda": 330000,
    "avaliacao": 367000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 123,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1627,7 +2215,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 122,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1638,7 +2230,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 121,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1649,7 +2245,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 120,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1660,7 +2260,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 119,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1671,7 +2275,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 126,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1682,7 +2290,11 @@
    "venda": 348382,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 114,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1693,7 +2305,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 115,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1704,7 +2320,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 116,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1715,7 +2335,11 @@
    "venda": 345032,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 113,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1726,7 +2350,11 @@
    "venda": 334982,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 112,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1737,7 +2365,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 117,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1748,7 +2380,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 118,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1759,7 +2395,11 @@
    "venda": 340007,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 111,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1770,7 +2410,11 @@
    "venda": 353868,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 132,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1781,7 +2425,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 128,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1792,7 +2440,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 142,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1803,7 +2455,11 @@
    "venda": 350465,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 131,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1814,7 +2470,11 @@
    "venda": 340258,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 130,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1825,7 +2485,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 141,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1836,7 +2500,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 127,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1847,7 +2515,11 @@
    "venda": 345361,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 129,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1858,7 +2530,11 @@
    "venda": 359354,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 136,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1869,7 +2545,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 137,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1880,7 +2560,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 133,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1891,7 +2575,11 @@
    "venda": 355899,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 138,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1902,7 +2590,11 @@
    "venda": 345533,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 139,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1913,7 +2605,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 134,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1924,7 +2620,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 135,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1935,7 +2635,11 @@
    "venda": 350716,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 140,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1946,7 +2650,11 @@
    "venda": 364840,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 27,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1957,7 +2665,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 28,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1968,7 +2680,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 29,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1979,7 +2695,11 @@
    "venda": 361332,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 30,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -1990,7 +2710,11 @@
    "venda": 350808,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 31,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2001,7 +2725,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 26,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2012,7 +2740,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 25,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2023,7 +2755,11 @@
    "venda": 356070,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 32,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2034,7 +2770,11 @@
    "venda": 370327,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 36,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2045,7 +2785,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 35,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2056,7 +2800,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 34,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2067,7 +2815,11 @@
    "venda": 366766,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 33,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2078,7 +2830,11 @@
    "venda": 356083,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 37,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2089,7 +2845,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 38,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2100,7 +2860,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 39,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2111,7 +2875,11 @@
    "venda": 361425,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 40,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2122,7 +2890,11 @@
    "venda": 375813,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 45,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2133,7 +2905,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 41,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2144,7 +2920,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 42,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2155,7 +2935,11 @@
    "venda": 372200,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 46,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2166,7 +2950,11 @@
    "venda": 361359,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 43,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2177,7 +2965,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 24,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2188,7 +2980,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 23,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2199,7 +2995,11 @@
    "venda": 366779,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 44,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2210,7 +3010,11 @@
    "venda": 381299,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 156,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2221,7 +3025,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 155,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2232,7 +3040,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 154,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2243,7 +3055,11 @@
    "venda": 377633,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 153,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2254,7 +3070,11 @@
    "venda": 366634,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 152,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2265,7 +3085,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 151,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2276,7 +3100,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 150,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 2,
@@ -2287,7 +3115,11 @@
    "venda": 372134,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 266,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2298,7 +3130,11 @@
    "venda": 386786,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 245,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2309,7 +3145,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 254,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2320,7 +3160,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 248,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2331,7 +3175,11 @@
    "venda": 383067,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 247,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2342,7 +3190,11 @@
    "venda": 371909,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 246,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2353,7 +3205,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 251,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2364,7 +3220,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 252,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2375,7 +3235,11 @@
    "venda": 377488,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 253,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2386,7 +3250,11 @@
    "venda": 392272,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 258,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2397,7 +3265,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 255,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2408,7 +3280,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 256,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2419,7 +3295,11 @@
    "venda": 388500,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 259,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2430,7 +3310,11 @@
    "venda": 377185,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 260,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2441,7 +3325,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 261,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2452,7 +3340,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 262,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2463,7 +3355,11 @@
    "venda": 382842,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 257,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2474,7 +3370,11 @@
    "venda": 397758,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 263,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2485,7 +3385,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 237,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2496,7 +3400,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 264,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2507,7 +3415,11 @@
    "venda": 393934,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 235,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2518,7 +3430,11 @@
    "venda": 382460,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 236,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2529,7 +3445,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 238,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2540,7 +3460,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 239,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2551,7 +3475,11 @@
    "venda": 388197,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 265,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2562,7 +3490,11 @@
    "venda": 403245,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 242,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2573,7 +3505,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 241,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2584,7 +3520,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 240,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2595,7 +3535,11 @@
    "venda": 399367,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 243,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2606,7 +3550,11 @@
    "venda": 387735,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 244,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2617,7 +3565,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 156,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2628,7 +3580,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 157,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2639,7 +3595,11 @@
    "venda": 393551,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 158,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2650,7 +3610,11 @@
    "venda": 408731,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 159,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2661,7 +3625,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 160,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2672,7 +3640,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 161,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2683,7 +3655,11 @@
    "venda": 404801,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 162,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2694,7 +3670,11 @@
    "venda": 393011,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 163,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2705,7 +3685,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 164,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2716,7 +3700,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 165,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2727,7 +3715,11 @@
    "venda": 398906,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 166,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2738,7 +3730,11 @@
    "venda": 414217,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 167,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2749,7 +3745,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 168,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2760,7 +3760,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 169,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2771,7 +3775,11 @@
    "venda": 410235,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 170,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2782,7 +3790,11 @@
    "venda": 398286,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 171,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2793,7 +3805,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 172,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2804,7 +3820,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 173,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2815,7 +3835,11 @@
    "venda": 404260,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 174,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2826,7 +3850,11 @@
    "venda": 419704,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 175,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2837,7 +3865,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 176,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2848,7 +3880,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 177,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2859,7 +3895,11 @@
    "venda": 415668,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 178,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2870,7 +3910,11 @@
    "venda": 403561,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 179,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2881,7 +3925,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 180,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2892,7 +3940,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 181,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2903,7 +3955,11 @@
    "venda": 409615,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 131,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2914,7 +3970,11 @@
    "venda": 425190,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 132,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2925,7 +3985,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 133,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2936,7 +4000,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 134,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2947,7 +4015,11 @@
    "venda": 421102,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 135,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2958,7 +4030,11 @@
    "venda": 408837,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 136,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2969,7 +4045,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 137,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2980,7 +4060,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 138,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -2991,7 +4075,11 @@
    "venda": 414969,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 139,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3002,7 +4090,11 @@
    "venda": 430676,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 140,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3013,7 +4105,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 141,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3024,7 +4120,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 142,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3035,7 +4135,11 @@
    "venda": 426535,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 143,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3046,7 +4150,11 @@
    "venda": 414112,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 144,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3057,7 +4165,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 145,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3068,7 +4180,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 146,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3079,7 +4195,11 @@
    "venda": 420324,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 147,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3090,7 +4210,11 @@
    "venda": 436163,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 148,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3101,7 +4225,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 149,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3112,7 +4240,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 150,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3123,7 +4255,11 @@
    "venda": 431969,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 151,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3134,7 +4270,11 @@
    "venda": 419387,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 152,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3145,7 +4285,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 153,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3156,7 +4300,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 154,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 2,
@@ -3167,7 +4315,11 @@
    "venda": 425678,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 155,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3178,7 +4330,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 98,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3189,7 +4345,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 97,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3200,7 +4360,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 96,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3211,7 +4375,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 95,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3222,7 +4390,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 94,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3233,7 +4405,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 93,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3244,7 +4420,11 @@
    "venda": 330000,
    "avaliacao": 368000,
    "tipologia": "B Garden",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 92,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3255,7 +4435,11 @@
    "venda": 360000,
    "avaliacao": 389000,
    "tipologia": "A1 Garden",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 91,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3266,7 +4450,11 @@
    "venda": 348382,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 110,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3277,7 +4465,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 90,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3288,7 +4480,11 @@
    "venda": 294532,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 89,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3299,7 +4495,11 @@
    "venda": 345032,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 86,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3310,7 +4510,11 @@
    "venda": 334982,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 108,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3321,7 +4525,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 88,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3332,7 +4540,11 @@
    "venda": 287995,
    "avaliacao": 344407.94,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 87,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3343,7 +4555,11 @@
    "venda": 340007,
    "avaliacao": 374487.24,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 109,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3354,7 +4570,11 @@
    "venda": 353868,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 101,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3365,7 +4585,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 99,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3376,7 +4600,11 @@
    "venda": 299170,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 105,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3387,7 +4615,11 @@
    "venda": 350465,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 102,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3398,7 +4630,11 @@
    "venda": 340258,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 103,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3409,7 +4645,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 106,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3420,7 +4660,11 @@
    "venda": 293304,
    "avaliacao": 359000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 100,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3431,7 +4675,11 @@
    "venda": 345361,
    "avaliacao": 389526.88,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 104,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3442,7 +4690,11 @@
    "venda": 359354,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 66,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3453,7 +4705,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 107,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3464,7 +4720,11 @@
    "venda": 303808,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 63,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3475,7 +4735,11 @@
    "venda": 355899,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 65,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3486,7 +4750,11 @@
    "venda": 345533,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 64,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3497,7 +4765,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 62,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3508,7 +4780,11 @@
    "venda": 297851,
    "avaliacao": 365000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 61,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3519,7 +4795,11 @@
    "venda": 350716,
    "avaliacao": 404566.53,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 67,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3530,7 +4810,11 @@
    "venda": 364840,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 56,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3541,7 +4825,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 53,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3552,7 +4840,11 @@
    "venda": 308447,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 54,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3563,7 +4855,11 @@
    "venda": 361332,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 57,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3574,7 +4870,11 @@
    "venda": 350808,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 58,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3585,7 +4885,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 55,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3596,7 +4900,11 @@
    "venda": 302399,
    "avaliacao": 372000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 60,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3607,7 +4915,11 @@
    "venda": 356070,
    "avaliacao": 414000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 59,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3618,7 +4930,11 @@
    "venda": 370327,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 16,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3629,7 +4945,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 15,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3640,7 +4960,11 @@
    "venda": 313085,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 20,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3651,7 +4975,11 @@
    "venda": 366766,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 17,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3662,7 +4990,11 @@
    "venda": 356083,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 18,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3673,7 +5005,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 21,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3684,7 +5020,11 @@
    "venda": 306946,
    "avaliacao": 379000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 22,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3695,7 +5035,11 @@
    "venda": 361425,
    "avaliacao": 422000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 19,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3706,7 +5050,11 @@
    "venda": 375813,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 6,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3717,7 +5065,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 4,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3728,7 +5080,11 @@
    "venda": 317723,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 5,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3739,7 +5095,11 @@
    "venda": 372200,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 7,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3750,7 +5110,11 @@
    "venda": 361359,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 8,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3761,7 +5125,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 14,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3772,7 +5140,11 @@
    "venda": 311493,
    "avaliacao": 386000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 13,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3783,7 +5155,11 @@
    "venda": 366779,
    "avaliacao": 430000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 9,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3794,7 +5170,11 @@
    "venda": 381299,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 94,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3805,7 +5185,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 97,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3816,7 +5200,11 @@
    "venda": 322361,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 10,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3827,7 +5215,11 @@
    "venda": 377633,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 95,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3838,7 +5230,11 @@
    "venda": 366634,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 96,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3849,7 +5245,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 11,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3860,7 +5260,11 @@
    "venda": 316041,
    "avaliacao": 394000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 12,
+    "nivel": "Sobressolo"
+   }
   },
   {
    "torre": 3,
@@ -3871,7 +5275,11 @@
    "venda": 372134,
    "avaliacao": 438000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 230,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3882,7 +5290,11 @@
    "venda": 386786,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 231,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3893,7 +5305,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 229,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3904,7 +5320,11 @@
    "venda": 327000,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 228,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3915,7 +5335,11 @@
    "venda": 383067,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 233,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3926,7 +5350,11 @@
    "venda": 371909,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 232,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3937,7 +5365,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 227,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3948,7 +5380,11 @@
    "venda": 320588,
    "avaliacao": 402000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 226,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3959,7 +5395,11 @@
    "venda": 377488,
    "avaliacao": 447000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 234,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3970,7 +5410,11 @@
    "venda": 392272,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 218,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3981,7 +5425,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 219,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -3992,7 +5440,11 @@
    "venda": 331638,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 220,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4003,7 +5455,11 @@
    "venda": 388500,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 221,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4014,7 +5470,11 @@
    "venda": 377185,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 222,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4025,7 +5485,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 223,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4036,7 +5500,11 @@
    "venda": 325135,
    "avaliacao": 411000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 224,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4047,7 +5515,11 @@
    "venda": 382842,
    "avaliacao": 457000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 225,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4058,7 +5530,11 @@
    "venda": 397758,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 217,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4069,7 +5545,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 216,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4080,7 +5560,11 @@
    "venda": 336276,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 215,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4091,7 +5575,11 @@
    "venda": 393934,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 214,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4102,7 +5590,11 @@
    "venda": 382460,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 213,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4113,7 +5605,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 212,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4124,7 +5620,11 @@
    "venda": 329683,
    "avaliacao": 420000,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 211,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4135,7 +5635,11 @@
    "venda": 388197,
    "avaliacao": 467000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 210,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4146,7 +5650,11 @@
    "venda": 403245,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 209,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4157,7 +5665,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 208,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4168,7 +5680,11 @@
    "venda": 340915,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 207,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4179,7 +5695,11 @@
    "venda": 399367,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 206,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4190,7 +5710,11 @@
    "venda": 387735,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 205,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4201,7 +5725,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 204,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4212,7 +5740,11 @@
    "venda": 334230,
    "avaliacao": 425880,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 203,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4223,7 +5755,11 @@
    "venda": 393551,
    "avaliacao": 477000,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 202,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4234,7 +5770,11 @@
    "venda": 408731,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 201,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4245,7 +5785,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 200,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4256,7 +5800,11 @@
    "venda": 345553,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 199,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4267,7 +5815,11 @@
    "venda": 404801,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 198,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4278,7 +5830,11 @@
    "venda": 393011,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 197,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4289,7 +5845,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 196,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4300,7 +5860,11 @@
    "venda": 338777,
    "avaliacao": 432640,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 195,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4311,7 +5875,11 @@
    "venda": 398906,
    "avaliacao": 486720,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 194,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4322,7 +5890,11 @@
    "venda": 414217,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 193,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4333,7 +5905,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 192,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4344,7 +5920,11 @@
    "venda": 350191,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 191,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4355,7 +5935,11 @@
    "venda": 410235,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 190,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4366,7 +5950,11 @@
    "venda": 398286,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 189,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4377,7 +5965,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 188,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4388,7 +5980,11 @@
    "venda": 343325,
    "avaliacao": 438048,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 187,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4399,7 +5995,11 @@
    "venda": 404260,
    "avaliacao": 492128,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 186,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4410,7 +6010,11 @@
    "venda": 419704,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 86,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4421,7 +6025,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 87,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4432,7 +6040,11 @@
    "venda": 354830,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 88,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4443,7 +6055,11 @@
    "venda": 415668,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 89,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4454,7 +6070,11 @@
    "venda": 403561,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 90,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4465,7 +6085,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 91,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4476,7 +6100,11 @@
    "venda": 347872,
    "avaliacao": 443456,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 92,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4487,7 +6115,11 @@
    "venda": 409615,
    "avaliacao": 497536,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 93,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4498,7 +6130,11 @@
    "venda": 425190,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 121,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4509,7 +6145,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 120,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4520,7 +6160,11 @@
    "venda": 359468,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 119,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4531,7 +6175,11 @@
    "venda": 421102,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 118,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4542,7 +6190,11 @@
    "venda": 408837,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 117,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4553,7 +6205,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 116,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4564,7 +6220,11 @@
    "venda": 352419,
    "avaliacao": 448864,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 115,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4575,7 +6235,11 @@
    "venda": 414969,
    "avaliacao": 504296,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 114,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4586,7 +6250,11 @@
    "venda": 430676,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 113,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4597,7 +6265,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 112,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4608,7 +6280,11 @@
    "venda": 364106,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 111,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4619,7 +6295,11 @@
    "venda": 426535,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 110,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4630,7 +6310,11 @@
    "venda": 414112,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 109,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4641,7 +6325,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 108,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4652,7 +6340,11 @@
    "venda": 356967,
    "avaliacao": 455624,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 107,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4663,7 +6355,11 @@
    "venda": 420324,
    "avaliacao": 509704,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 106,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4674,7 +6370,11 @@
    "venda": 436163,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 105,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4685,7 +6385,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 104,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4696,7 +6400,11 @@
    "venda": 368744,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 103,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4707,7 +6415,11 @@
    "venda": 431969,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 102,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4718,7 +6430,11 @@
    "venda": 419387,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 101,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4729,7 +6445,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 100,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4740,7 +6460,11 @@
    "venda": 361514,
    "avaliacao": 461032,
    "tipologia": "B",
-   "quartos": 2
+   "quartos": 2,
+   "vaga": {
+    "numero": 99,
+    "nivel": "Térreo"
+   }
   },
   {
    "torre": 3,
@@ -4751,7 +6475,11 @@
    "venda": 425678,
    "avaliacao": 515112,
    "tipologia": "A",
-   "quartos": 3
+   "quartos": 3,
+   "vaga": {
+    "numero": 98,
+    "nivel": "Térreo"
+   }
   }
  ]
 }

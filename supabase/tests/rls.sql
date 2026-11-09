@@ -7,6 +7,8 @@ declare
   id_corretor constant uuid := '00000000-0000-4000-8000-000000000001';
   id_inativo  constant uuid := '00000000-0000-4000-8000-000000000002';
   id_gerente  constant uuid := '00000000-0000-4000-8000-000000000003';
+  id_admin    constant uuid := '00000000-0000-4000-8000-000000000004';
+  falhou boolean;
   n bigint;
   logs_antes bigint;
   claims text;
@@ -114,6 +116,41 @@ begin
   if (select updated_by from public.unit_status where empreendimento = emp and torre = 1 and unidade = 101) <> id_gerente then
     raise exception 'FALHA: updated_by não registrou o gerente';
   end if;
+
+  -- equipe: definir_acesso
+  insert into auth.users (instance_id, id, email, aud, role) values
+    ('00000000-0000-0000-0000-000000000000', id_admin, 'teste-admin@espelho3d.invalid', 'authenticated', 'authenticated');
+  update public.profiles set role = 'admin', ativo = true where id = id_admin;
+
+  claims := json_build_object('sub', id_gerente, 'role', 'authenticated')::text;
+  perform set_config('request.jwt.claims', claims, true);
+  execute 'set local role authenticated';
+  perform public.definir_acesso(id_corretor, false);
+  execute 'reset role';
+  if (select ativo from public.profiles where id = id_corretor) then raise exception 'FALHA: gerente não desativou corretor'; end if;
+  execute 'set local role authenticated';
+  perform public.definir_acesso(id_corretor, true);
+  falhou := false; begin perform public.definir_acesso(id_corretor, true, 'gerente'); exception when others then falhou := true; end;
+  if not falhou then raise exception 'FALHA: gerente promoveu corretor'; end if;
+  falhou := false; begin perform public.definir_acesso(id_gerente, false); exception when others then falhou := true; end;
+  if not falhou then raise exception 'FALHA: gerente mexeu no próprio acesso'; end if;
+  falhou := false; begin perform public.definir_acesso(id_admin, false); exception when others then falhou := true; end;
+  if not falhou then raise exception 'FALHA: gerente desativou o admin'; end if;
+  execute 'reset role';
+
+  claims := json_build_object('sub', id_corretor, 'role', 'authenticated')::text;
+  perform set_config('request.jwt.claims', claims, true);
+  execute 'set local role authenticated';
+  falhou := false; begin perform public.definir_acesso(id_inativo, true); exception when others then falhou := true; end;
+  if not falhou then raise exception 'FALHA: corretor mudou acesso de alguém'; end if;
+  execute 'reset role';
+
+  claims := json_build_object('sub', id_admin, 'role', 'authenticated')::text;
+  perform set_config('request.jwt.claims', claims, true);
+  execute 'set local role authenticated';
+  perform public.definir_acesso(id_corretor, true, 'gerente');
+  execute 'reset role';
+  if (select role from public.profiles where id = id_corretor) <> 'gerente' then raise exception 'FALHA: admin não promoveu a gerente'; end if;
 
   raise exception 'RLS OK';
 end $$;

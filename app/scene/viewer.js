@@ -1,6 +1,7 @@
 // Renderer, câmera, controles de órbita, seleção e enquadramento.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { direcaoSol } from './sol.js';
 
 const reduzMovimento = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -47,6 +48,7 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
   const afastamento = () => (camera.aspect < 0.9 ? 1.8 : 1);
 
   function frame(alvo = 'all') {
+    if (vista) sairVista();
     const f = afastamento();
     if (alvo === 'all' || !towers.has(alvo)) {
       irPara(new THREE.Vector3(0, 12, 0), new THREE.Vector3(95 * f, 125 * f, 205 * f));
@@ -58,7 +60,25 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
     irPara(t.center.clone(), pos);
   }
 
+  // Voa até um ponto do chão (arredores). distancia em metros.
+  function frameTo({ x, z }, distancia = 200) {
+    if (vista) sairVista();
+    // Visão quase de cima, levemente do sul: o ponto e o condomínio cabem juntos na tela.
+    const d = distancia * afastamento();
+    irPara(new THREE.Vector3(x, 0, z), new THREE.Vector3(x + 0.15 * d, 0.9 * d, z + 0.4 * d));
+  }
+
+  // Arredores: deixa afastar mais e empurra a névoa para longe.
+  function setArredores(ligado) {
+    controls.maxDistance = ligado ? 9000 : 650;
+    scene.fog.near = ligado ? 2500 : 450;
+    scene.fog.far = ligado ? 9000 : 1500;
+    camera.far = ligado ? 12000 : 4000; camera.updateProjectionMatrix();
+    pedir();
+  }
+
   function focusUnit(mesh) {
+    if (vista) sairVista();
     const alvo = new THREE.Vector3();
     mesh.getWorldPosition(alvo);
     const normal = (mesh.userData.normal || new THREE.Vector3(0, 0, 1)).clone().transformDirection(mesh.parent.matrixWorld);
@@ -77,19 +97,57 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
     const hit = ray.intersectObjects(scene.children, true).find(h => visivel(h.object) && (h.object.userData.key || h.object.userData.solido));
     return hit && hit.object.userData.key ? hit.object.userData.key : null;
   }
-  const cbs = { pick: [], hover: [] };
-  let inicio = null;
-  canvas.addEventListener('pointerdown', ev => { inicio = [ev.clientX, ev.clientY]; });
+  const cbs = { pick: [], hover: [], render: [] };
+  let inicio = null, ultimo = null;
+  canvas.addEventListener('pointerdown', ev => { inicio = [ev.clientX, ev.clientY]; ultimo = inicio; });
   canvas.addEventListener('pointerup', ev => {
-    if (inicio && Math.hypot(ev.clientX - inicio[0], ev.clientY - inicio[1]) < 6) {
+    if (!vista && inicio && Math.hypot(ev.clientX - inicio[0], ev.clientY - inicio[1]) < 6) {
       const k = chaveEm(ev); cbs.pick.forEach(cb => cb(k));
     }
     inicio = null;
   });
   canvas.addEventListener('pointermove', ev => {
+    if (vista) {               // na vista, arrastar gira o olhar
+      if (inicio && ev.buttons) {
+        vista.yaw -= (ev.clientX - ultimo[0]) * 0.004;
+        vista.pitch = Math.max(-1.1, Math.min(0.5, vista.pitch + (ev.clientY - ultimo[1]) * 0.003));
+        ultimo = [ev.clientX, ev.clientY];
+        olharVista(); pedir();
+      }
+      return;
+    }
     if (inicio && ev.buttons) return;
     const k = chaveEm(ev); cbs.hover.forEach(cb => cb(k, ev.clientX, ev.clientY));
   });
+
+  // ---------- vista da unidade ----------
+  let vista = null;
+  const dirVista = () => new THREE.Vector3(Math.sin(vista.yaw) * Math.cos(vista.pitch), Math.sin(vista.pitch), Math.cos(vista.yaw) * Math.cos(vista.pitch));
+  function olharVista() { camera.position.copy(vista.pos); camera.lookAt(vista.pos.clone().add(dirVista())); }
+  function entrarVista(mesh, { aoSair } = {}) {
+    tween = null;
+    const centro = new THREE.Vector3(); mesh.getWorldPosition(centro);
+    const normal = (mesh.userData.normal || new THREE.Vector3(0, 0, 1)).clone().transformDirection(mesh.parent.matrixWorld);
+    const pos = centro.clone().add(normal.clone().multiplyScalar(mesh.scale.z / 2 + 0.6));
+    pos.y = centro.y - mesh.scale.y / 2 + 1.5;
+    vista = { pos, yaw: Math.atan2(normal.x, normal.z), pitch: -0.06, aoSair };
+    controls.enabled = false;
+    olharVista(); pedir();
+  }
+  function sairVista() {
+    if (!vista) return;
+    const alvo = vista.pos.clone().add(dirVista().multiplyScalar(30)), aoSair = vista.aoSair;
+    vista = null;
+    controls.target.copy(alvo); controls.enabled = true; controls.update();
+    pedir();
+    if (aoSair) aoSair();
+  }
+  addEventListener('keydown', ev => { if (ev.key === 'Escape' && vista) sairVista(); });
+  const estadoVista = () => {
+    if (!vista) return null;
+    const d = dirVista();
+    return { pos: [vista.pos.x, vista.pos.z], dir: [d.x, d.z] };
+  };
   canvas.addEventListener('pointerleave', () => cbs.hover.forEach(cb => cb(null, 0, 0)));
 
   const ajustar = () => {
@@ -111,20 +169,38 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
       camera.position.lerpVectors(tween.dePos, tween.posicao, e);
       if (k === 1) tween = null;
     }
-    const mexeu = controls.update();   // true enquanto o amortecimento ainda move a câmera
+    const mexeu = vista ? false : controls.update();   // true enquanto o amortecimento ainda move a câmera
     renderer.render(scene, camera);
+    cbs.render.forEach(cb => cb());
     if (tween || mexeu) pedir();
   }
   controls.addEventListener('change', pedir);
   camera.position.set(95, 125, 205);
   pedir();
 
+  // Sol: posição real (azimute/elevação) convertida para a cena; à noite fica só uma luz fraca.
+  function setSol(pos, rotacaoGraus = 0) {
+    const [x, y, z] = direcaoSol(pos, rotacaoGraus);
+    sol.position.set(x * 160, Math.max(y * 160, 3), z * 160);
+    sol.intensity = pos.elevacao > 0 ? 0.5 + 1.9 * Math.min(1, pos.elevacao / 35) : 0.12;
+    pedir();
+  }
+
   return {
-    scene, camera, renderer, controls, frame, focusUnit,
+    scene, camera, renderer, controls, frame, focusUnit, setSol, frameTo, setArredores,
     invalidate: pedir,
     setTowers: m => { towers = m; },
     onPick: cb => cbs.pick.push(cb),
     onHover: cb => cbs.hover.push(cb),
+    onRender: cb => cbs.render.push(cb),
+    // Ponto da cena → pixel no canvas; visivel = na frente da câmera e dentro da tela.
+    projetar(x, y, z) {
+      const v = new THREE.Vector3(x, y, z).project(camera), w = canvas.clientWidth, h = canvas.clientHeight;
+      const px = (v.x + 1) / 2 * w, py = (1 - v.y) / 2 * h;
+      return { x: px, y: py, visivel: v.z < 1 && px >= 0 && px <= w && py >= 0 && py <= h };
+    },
+    entrarVista, sairVista, estadoVista,
+    emVista: () => !!vista,
     dispose: () => { cancelAnimationFrame(raf); ro.disconnect(); controls.dispose(); renderer.dispose(); },
   };
 }

@@ -36,4 +36,22 @@ function abrir({ titulo, texto, itens = [], ok, cancelar }) {
 export const confirmar = ({ titulo, texto, itens, ok = 'Confirmar', cancelar = 'Cancelar' }) =>
   abrir({ titulo, texto, itens, ok, cancelar });
 
-export const avisar = (titulo, texto) => abrir({ titulo, texto, ok: 'Entendi' }).then(() => undefined);
+export const avisar = (titulo, texto, itens = []) => abrir({ titulo, texto, itens, ok: 'Entendi' }).then(() => undefined);
+
+// Caixa de progresso que não fecha com Esc nem clique: usada enquanto grava no banco.
+export function progresso(titulo) {
+  const dlg = document.createElement('dialog');
+  dlg.className = 'dlg-confirma';
+  dlg.innerHTML = '<div class="login"><h2></h2><p class="prog-texto"></p><progress max="1" value="0"></progress></div>';
+  dlg.querySelector('h2').textContent = titulo;
+  dlg.addEventListener('cancel', ev => ev.preventDefault());
+  document.body.append(dlg);
+  dlg.showModal();
+  return {
+    atualizar(feitas, total) {
+      dlg.querySelector('.prog-texto').textContent = `Gravando ${feitas} de ${total}…`;
+      const barra = dlg.querySelector('progress'); barra.max = total; barra.value = feitas;
+    },
+    fechar() { dlg.close(); dlg.remove(); },
+  };
+}

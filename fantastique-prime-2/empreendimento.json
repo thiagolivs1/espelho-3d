@@ -5,49 +5,430 @@
   "endereco": "Av. Francisco Sá, 1137 · Carlito Pamplona, Fortaleza (CE)",
   "entrega": "Agosto de 2029",
   "fatos": [
-    { "valor": "3", "rotulo": "torres" },
-    { "valor": "432", "rotulo": "unidades" },
-    { "valor": "11.567", "rotulo": "m² de terreno" },
-    { "valor": "ago/2029", "rotulo": "entrega" }
+    {
+      "valor": "3",
+      "rotulo": "torres"
+    },
+    {
+      "valor": "432",
+      "rotulo": "unidades"
+    },
+    {
+      "valor": "11.567",
+      "rotulo": "m² de terreno"
+    },
+    {
+      "valor": "ago/2029",
+      "rotulo": "entrega"
+    }
   ],
   "rodape": "Modelo demonstrativo. Implantação, colunas, metragens e plantas conforme o Módulo de Apresentação do Fantastique Prime II. Volumetria ilustrativa. Preços da Tabela 60X Lançamento Prime II, sujeitos a alteração sem aviso prévio.",
   "cores": {
     "marca": "#9C6A3C",
     "escuro": "#3B2A20",
     "fundo": "#E8EBE7",
-    "fachada": { "base": "#EEE9E1", "faixa": "#D5C7B2", "detalhe": "#B5A68A" }
+    "fachada": {
+      "base": "#EEE9E1",
+      "faixa": "#D5C7B2",
+      "detalhe": "#B5A68A"
+    }
   },
-  "logos": { "empreendimento": "img/logo-fantastique.jpg", "construtora": "img/logo-fan.jpg" },
+  "logos": {
+    "empreendimento": "img/logo-fantastique.jpg",
+    "construtora": "img/logo-fan.jpg"
+  },
   "simulador": "simulador/",
-  "torres": { "pavimentos": 18, "colunas": 8, "peDireito": 2.6, "laje": 0.1 },
+  "geo": {
+    "lat": -3.719802,
+    "lon": -38.55227,
+    "rotacaoGraus": 1.28,
+    "ajuste": "3 cantos do lote (NE, SE e o recorte da guarita) casados com o polígono 'construction' do OpenStreetMap (way 996075402); resíduos de 1 a 5 m"
+  },
+  "torres": {
+    "pavimentos": 18,
+    "colunas": 8,
+    "peDireito": 2.6,
+    "laje": 0.1
+  },
   "implantacao": {
     "referencia": "PDF p. 8–9 renderizado com 1400 px de largura; x para a direita, y para baixo; norte para cima. giroGraus é o ângulo do eixo longo medido na imagem (y para baixo). Escala conferida pela área do terreno (11.567,09 m²).",
     "metrosPorPixel": 0.1639,
-    "lote": [[155, 203], [668, 174], [655, 72], [972, 155], [995, 197], [937, 450], [800, 772], [150, 660]],
+    "lote": [
+      [
+        155,
+        203
+      ],
+      [
+        668,
+        174
+      ],
+      [
+        655,
+        72
+      ],
+      [
+        972,
+        155
+      ],
+      [
+        995,
+        197
+      ],
+      [
+        937,
+        450
+      ],
+      [
+        800,
+        772
+      ],
+      [
+        150,
+        660
+      ]
+    ],
     "torres": [
-      { "numero": 1, "centro": [738.8, 436.1], "giroGraus": -3.2, "largura": 37.7, "profundidade": 16.1, "nucleo": 4.5 },
-      { "numero": 2, "centro": [692.2, 637.4], "giroGraus": -3.2, "largura": 37.7, "profundidade": 16.1, "nucleo": 4.5 },
-      { "numero": 3, "centro": [367.2, 584.7], "giroGraus": -3.2, "largura": 37.7, "profundidade": 16.1, "nucleo": 4.5 }
+      {
+        "numero": 1,
+        "centro": [
+          738.8,
+          436.1
+        ],
+        "giroGraus": -3.2,
+        "largura": 37.7,
+        "profundidade": 16.1,
+        "nucleo": 4.5
+      },
+      {
+        "numero": 2,
+        "centro": [
+          692.2,
+          637.4
+        ],
+        "giroGraus": -3.2,
+        "largura": 37.7,
+        "profundidade": 16.1,
+        "nucleo": 4.5
+      },
+      {
+        "numero": 3,
+        "centro": [
+          367.2,
+          584.7
+        ],
+        "giroGraus": -3.2,
+        "largura": 37.7,
+        "profundidade": 16.1,
+        "nucleo": 4.5
+      }
     ],
     "areas": [
-      { "nome": "Estacionamento", "tipo": "garagem", "poligono": [[158, 206], [605, 180], [610, 505], [158, 515]] },
-      { "nome": "Playground", "tipo": "verde", "poligono": [[785, 167.5], [837.5, 172.5], [827.5, 240], [760, 242.5]] },
-      { "nome": "Fitness, coworking e mini-market", "tipo": "lazer", "poligono": [[862.5, 192.5], [905, 200], [887.5, 279], [843.5, 265]] },
-      { "nome": "Campinho", "tipo": "verde", "poligono": [[930, 167.5], [960, 170], [972.5, 195], [956, 277.5], [905, 262.5]] },
-      { "nome": "Salão de jogos, salão de festas e deck", "tipo": "lazer", "poligono": [[745, 293], [860, 290], [862, 350], [745, 353]] },
-      { "nome": "Piscinas", "tipo": "agua", "poligono": [[902.5, 281], [950, 287.5], [920, 412.5], [875, 410]] }
+      {
+        "nome": "Estacionamento",
+        "tipo": "garagem",
+        "poligono": [
+          [
+            158,
+            206
+          ],
+          [
+            605,
+            180
+          ],
+          [
+            610,
+            505
+          ],
+          [
+            158,
+            515
+          ]
+        ]
+      },
+      {
+        "nome": "Playground",
+        "tipo": "verde",
+        "poligono": [
+          [
+            785,
+            167.5
+          ],
+          [
+            837.5,
+            172.5
+          ],
+          [
+            827.5,
+            240
+          ],
+          [
+            760,
+            242.5
+          ]
+        ]
+      },
+      {
+        "nome": "Fitness, coworking e mini-market",
+        "tipo": "lazer",
+        "poligono": [
+          [
+            862.5,
+            192.5
+          ],
+          [
+            905,
+            200
+          ],
+          [
+            887.5,
+            279
+          ],
+          [
+            843.5,
+            265
+          ]
+        ]
+      },
+      {
+        "nome": "Campinho",
+        "tipo": "verde",
+        "poligono": [
+          [
+            930,
+            167.5
+          ],
+          [
+            960,
+            170
+          ],
+          [
+            972.5,
+            195
+          ],
+          [
+            956,
+            277.5
+          ],
+          [
+            905,
+            262.5
+          ]
+        ]
+      },
+      {
+        "nome": "Salão de jogos, salão de festas e deck",
+        "tipo": "lazer",
+        "poligono": [
+          [
+            745,
+            293
+          ],
+          [
+            860,
+            290
+          ],
+          [
+            862,
+            350
+          ],
+          [
+            745,
+            353
+          ]
+        ]
+      },
+      {
+        "nome": "Piscinas",
+        "tipo": "agua",
+        "poligono": [
+          [
+            902.5,
+            281
+          ],
+          [
+            950,
+            287.5
+          ],
+          [
+            920,
+            412.5
+          ],
+          [
+            875,
+            410
+          ]
+        ]
+      }
     ],
     "ruas": [
-      { "nome": "Av. Francisco Sá", "linha": [[384, -76], [1281, 159]], "largura": 18 },
-      { "nome": "Rua Caririaçu", "linha": [[-156, 668], [1086, 882]], "largura": 12 }
+      {
+        "nome": "Av. Francisco Sá",
+        "linha": [
+          [
+            384,
+            -76
+          ],
+          [
+            1281,
+            159
+          ]
+        ],
+        "largura": 18
+      },
+      {
+        "nome": "Rua Caririaçu",
+        "linha": [
+          [
+            -156,
+            668
+          ],
+          [
+            1086,
+            882
+          ]
+        ],
+        "largura": 12
+      }
     ]
   },
   "tipologias": {
-    "A1 Garden": { "planta": "img/plantas/a1-garden.jpg", "legenda": "Tipo A1 Garden · 3 quartos · 68,40 m²" },
-    "B Garden": { "planta": "img/plantas/b-garden.jpg", "legenda": "Tipo B Garden · 2 quartos · planta de referência (B1)" },
-    "B-PNE Garden": { "planta": "img/plantas/b-pne-garden.jpg", "legenda": "Tipo B-PNE Garden · 2 quartos · planta de referência (B-PNE1)" },
-    "A": { "planta": "img/plantas/tipo-a.jpg", "legenda": "Tipo A · 3 quartos · 59,93 m²" },
-    "B": { "planta": "img/plantas/tipo-b.jpg", "legenda": "Tipo B · 2 quartos · 51,66 m²" },
-    "B-PNE": { "planta": "img/plantas/b-pne.jpg", "legenda": "Tipo B-PNE · 2 quartos · 51,66 m²" }
-  }
+    "A1 Garden": {
+      "planta": "img/plantas/a1-garden.jpg",
+      "legenda": "Tipo A1 Garden · 3 quartos · 68,40 m²",
+      "perspectivas": [
+        "img/aptos/tipo-a-1.jpg",
+        "img/aptos/tipo-a-2.jpg",
+        "img/aptos/tipo-a-3.jpg",
+        "img/aptos/tipo-a-4.jpg",
+        "img/aptos/tipo-a-5.jpg"
+      ]
+    },
+    "B Garden": {
+      "planta": "img/plantas/b-garden.jpg",
+      "legenda": "Tipo B Garden · 2 quartos · planta de referência (B1)",
+      "perspectivas": [
+        "img/aptos/tipo-b-1.jpg",
+        "img/aptos/tipo-b-2.jpg",
+        "img/aptos/tipo-b-3.jpg",
+        "img/aptos/tipo-b-4.jpg",
+        "img/aptos/tipo-b-5.jpg"
+      ]
+    },
+    "B-PNE Garden": {
+      "planta": "img/plantas/b-pne-garden.jpg",
+      "legenda": "Tipo B-PNE Garden · 2 quartos · planta de referência (B-PNE1)",
+      "perspectivas": [
+        "img/aptos/tipo-b-1.jpg",
+        "img/aptos/tipo-b-2.jpg",
+        "img/aptos/tipo-b-3.jpg",
+        "img/aptos/tipo-b-4.jpg",
+        "img/aptos/tipo-b-5.jpg"
+      ]
+    },
+    "A": {
+      "planta": "img/plantas/tipo-a.jpg",
+      "legenda": "Tipo A · 3 quartos · 59,93 m²",
+      "perspectivas": [
+        "img/aptos/tipo-a-1.jpg",
+        "img/aptos/tipo-a-2.jpg",
+        "img/aptos/tipo-a-3.jpg",
+        "img/aptos/tipo-a-4.jpg",
+        "img/aptos/tipo-a-5.jpg"
+      ]
+    },
+    "B": {
+      "planta": "img/plantas/tipo-b.jpg",
+      "legenda": "Tipo B · 2 quartos · 51,66 m²",
+      "perspectivas": [
+        "img/aptos/tipo-b-1.jpg",
+        "img/aptos/tipo-b-2.jpg",
+        "img/aptos/tipo-b-3.jpg",
+        "img/aptos/tipo-b-4.jpg",
+        "img/aptos/tipo-b-5.jpg"
+      ]
+    },
+    "B-PNE": {
+      "planta": "img/plantas/b-pne.jpg",
+      "legenda": "Tipo B-PNE · 2 quartos · 51,66 m²",
+      "perspectivas": [
+        "img/aptos/tipo-b-1.jpg",
+        "img/aptos/tipo-b-2.jpg",
+        "img/aptos/tipo-b-3.jpg",
+        "img/aptos/tipo-b-4.jpg",
+        "img/aptos/tipo-b-5.jpg"
+      ]
+    }
+  },
+  "pontosLazer": [
+    {
+      "nome": "Salão de jogos",
+      "px": [
+        760,
+        323
+      ],
+      "imagens": [
+        "img/lazer/salao-de-jogos.jpg"
+      ]
+    },
+    {
+      "nome": "Salão de festas",
+      "px": [
+        805,
+        323
+      ],
+      "imagens": [
+        "img/lazer/salao-de-festas.jpg"
+      ]
+    },
+    {
+      "nome": "Deck com churrasqueira",
+      "px": [
+        853,
+        323
+      ],
+      "imagens": [
+        "img/lazer/deck.jpg"
+      ]
+    },
+    {
+      "nome": "Fitness",
+      "px": [
+        870,
+        247
+      ],
+      "imagens": [
+        "img/lazer/fitness.jpg"
+      ]
+    },
+    {
+      "nome": "Coworking",
+      "px": [
+        880,
+        212
+      ],
+      "imagens": [
+        "img/lazer/coworking.jpg"
+      ]
+    },
+    {
+      "nome": "Mini-market",
+      "px": [
+        893,
+        181
+      ],
+      "imagens": [
+        "img/lazer/mini-market.jpg"
+      ]
+    },
+    {
+      "nome": "Churrasqueiras",
+      "px": [
+        835,
+        606
+      ],
+      "imagens": [
+        "img/lazer/churrasqueiras.jpg"
+      ]
+    }
+  ]
 }

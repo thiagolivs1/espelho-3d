@@ -42,3 +42,15 @@ test('arquivos de situação ficam fora do git', () => {
   const gi = readFileSync(new URL('../.gitignore', import.meta.url), 'utf8');
   assert.ok(gi.split('\n').includes('supabase/seed/*-status.sql'));
 });
+
+test('vagas entram no units.json (e nada de situação)', () => {
+  const j = toUnitsJson(rows, new Map([['u-1-1', { numero: 80, nivel: 'Sobressolo' }]]));
+  assert.deepEqual(j.unidades.find(u => u.torre === 1 && u.unidade === 1).vaga, { numero: 80, nivel: 'Sobressolo' });
+  assert.equal(j.unidades.find(u => u.torre === 1 && u.unidade === 2).vaga, null);
+  assert.equal(/indisponivel|"status"/.test(JSON.stringify(j)), false);
+});
+
+test('units.json publicado tem vaga em todas as unidades', () => {
+  const pub = JSON.parse(readFileSync(new URL('../fantastique-prime-2/units.json', import.meta.url), 'utf8'));
+  assert.equal(pub.unidades.filter(u => u.vaga && u.vaga.numero > 0).length, 432);
+});

@@ -79,3 +79,19 @@ export const precoSuspeito = (antigo, novo) => antigo > 0 && Math.abs(novo / ant
 
 export const AVISO_PRECOS = 'Preços da tabela publicada; não foi possível confirmar atualizações.';
 export const avisoPrecos = prices => (prices ? null : AVISO_PRECOS);
+
+// Grava itens com até `concorrencia` pedidos ao mesmo tempo, avisando o progresso.
+// No primeiro erro, para de iniciar novos e rejeita com e.gravados = quantos já foram gravados.
+export async function aplicarEmLotes(itens, gravar, { concorrencia = 6, aoProgredir = () => {} } = {}) {
+  let proximo = 0, gravados = 0, erro = null;
+  const trabalhador = async () => {
+    while (!erro && proximo < itens.length) {
+      const item = itens[proximo++];
+      try { await gravar(item); gravados++; aoProgredir(gravados, itens.length); }
+      catch (e) { erro = erro || e; }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(concorrencia, itens.length) }, trabalhador));
+  if (erro) { erro.gravados = gravados; throw erro; }
+  return { gravados };
+}

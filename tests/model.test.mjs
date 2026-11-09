@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mergeUnits, summarize, filterUnits, isStale, diffChanges, toSimuladorRows, precisaRecarregar, precoSuspeito, avisoPrecos } from '../app/model.js';
+import { mergeUnits, summarize, filterUnits, isStale, diffChanges, toSimuladorRows, precisaRecarregar, precoSuspeito, avisoPrecos, aplicarEmLotes } from '../app/model.js';
 import { corDaUnidade, CORES_SITUACAO } from '../app/scene/cores.js';
 
 const us = [
@@ -99,4 +99,25 @@ test('filtro visível na maquete: unidade fora do filtro fica translúcida e bem
   assert.notEqual(fora.cor, dentro.cor);
   assert.equal(corDaUnidade(u, 'disponibilidade', null, cores).cor, CORES_SITUACAO.D);
   assert.equal(corDaUnidade({ ...u, status: null }, 'disponibilidade', null, cores).cor, '#BDB8AE');
+});
+
+test('gravação em lotes: no máximo 6 ao mesmo tempo, com progresso', async () => {
+  let ativos = 0, pico = 0; const progresso = [];
+  const gravar = async () => { ativos++; pico = Math.max(pico, ativos); await new Promise(r => setTimeout(r, 2)); ativos--; };
+  const r = await aplicarEmLotes(Array.from({ length: 20 }, (_, i) => i), gravar, { concorrencia: 6, aoProgredir: (f, t) => progresso.push([f, t]) });
+  assert.equal(r.gravados, 20);
+  assert.ok(pico <= 6 && pico > 1, `pico ${pico}`);
+  assert.equal(progresso.length, 20);
+  assert.deepEqual(progresso.at(-1), [20, 20]);
+});
+
+test('gravação em lotes: para no primeiro erro e diz quantos gravou', async () => {
+  const iniciados = [];
+  const gravar = async i => { iniciados.push(i); await new Promise(r => setTimeout(r, 2)); if (i === 4) throw new Error('falhou'); };
+  await assert.rejects(aplicarEmLotes(Array.from({ length: 30 }, (_, i) => i), gravar, { concorrencia: 3 }), e => {
+    assert.match(e.message, /falhou/);
+    assert.ok(e.gravados >= 4 && e.gravados < 30, `gravados ${e.gravados}`);
+    return true;
+  });
+  assert.ok(iniciados.length < 30);
 });

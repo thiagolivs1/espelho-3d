@@ -3,7 +3,8 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { floorOf, columnOf, tipologiaFor } from '../app/units.js';
+import { floorOf, columnOf, tipologiaFor, unitKey } from '../app/units.js';
+import { parseCvCsv } from '../app/cv.js';
 
 export function extractUnits(html) {
   const m = /const U = (\[\[.*?\]\]);/.exec(html);
@@ -15,12 +16,14 @@ export function extractUnits(html) {
   }));
 }
 
-export function toUnitsJson(rows) {
+// vagas: Map<unitKey, {numero, nivel}> lido do mapa do CV (opcional). Vaga não é disponibilidade.
+export function toUnitsJson(rows, vagas = new Map()) {
   return {
     fonte: 'Tabela 60X Lançamento Prime II · 09/11/2026',
     unidades: rows.map(({ torre, unidade, andar, coluna, area, venda, avaliacao }) => {
       const { codigo, quartos } = tipologiaFor(torre, unidade);
-      return { torre, unidade, andar, coluna, area, venda, avaliacao, tipologia: codigo, quartos };
+      const vaga = vagas.get(unitKey(torre, unidade)) || null;
+      return { torre, unidade, andar, coluna, area, venda, avaliacao, tipologia: codigo, quartos, vaga };
     }),
   };
 }
@@ -50,12 +53,19 @@ export function toStatusSeedSql(rows, slug) {
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  const [html, outJson, outSql, slug] = process.argv.slice(2);
-  if (!slug) { console.error('uso: node tools/extract-units.mjs <simulador.html> <units.json> <seed.sql> <slug>'); process.exit(2); }
+  const [html, outJson, outSql, slug, cvCsv] = process.argv.slice(2);
+  if (!slug) { console.error('uso: node tools/extract-units.mjs <simulador.html> <units.json> <seed.sql> <slug> [mapa-do-cv.csv]'); process.exit(2); }
   const rows = extractUnits(readFileSync(html, 'utf8'));
+  let vagas = new Map();
+  if (cvCsv) {
+    const r = parseCvCsv(readFileSync(cvCsv, 'utf8'), new Map(rows.map(x => [unitKey(x.torre, x.unidade), x.area])));
+    if (r.recusado) { console.error(r.recusado); process.exit(1); }
+    vagas = new Map(r.linhas.filter(l => l.vaga).map(l => [l.key, l.vaga]));
+    console.log(`${vagas.size} vagas lidas de ${cvCsv}${r.erros.length ? ` (${r.erros.length} linhas com problema)` : ''}`);
+  }
   const outStatus = outSql.replace(/\.sql$/, '-status.sql');
   for (const f of [outJson, outSql]) mkdirSync(dirname(f), { recursive: true });
-  writeFileSync(outJson, JSON.stringify(toUnitsJson(rows), null, 1) + '\n');
+  writeFileSync(outJson, JSON.stringify(toUnitsJson(rows, vagas), null, 1) + '\n');
   writeFileSync(outSql, toSeedSql(rows, slug));
   writeFileSync(outStatus, toStatusSeedSql(rows, slug));
   console.log(`${rows.length} unidades → ${outJson}, ${outSql}, ${outStatus} (este último fora do git)`);

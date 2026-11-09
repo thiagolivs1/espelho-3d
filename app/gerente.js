@@ -3,7 +3,10 @@ import { STATUS, unitKey, unitLabel, parseBRL, formatBRL } from './units.js';
 import { diffChanges, precisaRecarregar, precoSuspeito } from './model.js';
 import { CORES_SITUACAO } from './scene/cores.js';
 import { mountLogin } from './ui/login.js';
-import { confirmar, avisar } from './ui/dialogo.js';
+import { confirmar, avisar, progresso } from './ui/dialogo.js';
+import { parseCvCsv } from './cv.js';
+import { mountEquipe } from './ui/equipe.js';
+import { abrirTrocaSenha } from './ui/senha.js';
 import { supabase, signOut, currentSession, currentRole, fetchPrices, fetchStatuses, fetchLastUpdate, saveChanges, registrarConferencia } from './supabase.js';
 
 const EMPREENDIMENTOS = [{ slug: 'fantastique-prime-2', nome: 'Fantastique Prime II' }];
@@ -28,6 +31,7 @@ export async function startGerente() {
     }
     let role = null;
     try { role = await currentRole(); } catch { /* tratado abaixo */ }
+    st.role = role;
     if (!['admin', 'gerente'].includes(role)) {
       app.innerHTML = `<div class="ger-msg"><h1>Área do gerente</h1><p>Esta área é só para gerentes.</p>
         <button class="btn ghost" id="sair" type="button">Sair</button></div>`;
@@ -66,10 +70,18 @@ export async function startGerente() {
         <div><h1>Área do gerente</h1><p class="mute">${email} · ${ultima ? `última atualização em ${dataHora(ultima.em)}${ultima.por ? ` por ${ultima.por}` : ''}` : 'sem atualização registrada'}</p></div>
         <div class="ger-acoes">
           <select id="emp" aria-label="Empreendimento">${EMPREENDIMENTOS.map(e => `<option value="${e.slug}">${e.nome}</option>`).join('')}</select>
+          <label class="btn" for="cv-arquivo" title="Arquivo CSV exportado do Construtor de Vendas (mapa de disponibilidade)">Importar mapa do CV</label>
+          <input type="file" id="cv-arquivo" accept=".csv,text/csv" hidden>
           <a class="btn ghost" href="../${st.slug}/">Ver maquete</a>
+          <button class="btn ghost" id="senha" type="button">Trocar senha</button>
           <button class="btn ghost" id="sair" type="button">Sair</button>
         </div>
       </header>
+      <div class="ger-secoes"><div class="seg" id="secoes" role="group" aria-label="Seção">
+        <button data-sec="disp" aria-pressed="true">Disponibilidade</button><button data-sec="equipe" aria-pressed="false">Equipe</button>
+      </div></div>
+      <div id="sec-equipe" class="ger-equipe" hidden></div>
+      <div id="sec-disp">
       <div class="ger-barra">
         <div class="seg" id="abas">${torres.map(t => `<button data-t="${t}" aria-pressed="${t === st.torre}">Torre ${t}</button>`).join('')}</div>
         <div class="ger-massa">
@@ -83,8 +95,19 @@ export async function startGerente() {
           <button class="btn" id="salvar" type="button" disabled>Salvar alterações</button></div>
       </div>
       <div class="ger-grade" id="grade"></div>
-      <p class="mute ger-leg">${Object.entries(STATUS).map(([k, n]) => `<span><i class="dot" style="background:${CORES_SITUACAO[k]}"></i>${n}</span>`).join(' ')}</p>`;
+      <p class="mute ger-leg">${Object.entries(STATUS).map(([k, n]) => `<span><i class="dot" style="background:${CORES_SITUACAO[k]}"></i>${n}</span>`).join(' ')}</p>
+      </div>`;
     document.getElementById('sair').onclick = () => signOut();
+    document.getElementById('senha').onclick = () => abrirTrocaSenha();
+    let equipeMontada = false;
+    document.getElementById('secoes').onclick = ev => {
+      const b = ev.target.closest('[data-sec]'); if (!b) return;
+      document.querySelectorAll('#secoes button').forEach(x => x.setAttribute('aria-pressed', x === b));
+      const equipe = b.dataset.sec === 'equipe';
+      document.getElementById('sec-equipe').hidden = !equipe;
+      document.getElementById('sec-disp').hidden = equipe;
+      if (equipe && !equipeMontada) { equipeMontada = true; mountEquipe(document.getElementById('sec-equipe'), { meuPapel: st.role, meuId: st.usuario }); }
+    };
     document.getElementById('abas').onclick = ev => {
       const b = ev.target.closest('[data-t]'); if (!b) return;
       st.torre = Number(b.dataset.t); st.selecao.clear();
@@ -97,6 +120,10 @@ export async function startGerente() {
       st.selecao.clear(); ev.target.value = ''; grade();
     };
     document.getElementById('salvar').onclick = salvar;
+    document.getElementById('cv-arquivo').onchange = async ev => {
+      const arquivo = ev.target.files[0]; ev.target.value = '';
+      if (arquivo) await importarCv(arquivo, email);
+    };
     document.getElementById('conferir').onclick = async ev => {
       const b = ev.currentTarget; b.disabled = true; b.textContent = 'Registrando…';
       try { await registrarConferencia(st.slug); await carregar(email); }
@@ -145,6 +172,40 @@ export async function startGerente() {
     resumo();
   }
 
+  // Importação do mapa do CV: mostra o que muda e só grava depois da confirmação.
+  async function importarCv(arquivo, email) {
+    if (mudancas().length || st.invalidos.size)
+      return avisar('Há alterações não salvas', 'Salve ou desfaça as alterações da grade antes de importar o mapa do CV.');
+    const r = parseCvCsv(await arquivo.text(), new Map(st.unidades.map(u => [unitKey(u.torre, u.unidade), u.area])));
+    if (r.recusado) return avisar('Não foi possível importar', r.recusado, r.erros.slice(0, 30));
+    const editado = new Map([...st.original].map(([k, v]) => [k, { ...v }]));
+    for (const l of r.linhas) editado.set(l.key, { status: l.status, venda: l.venda });
+    const m = diffChanges(st.original, editado);
+    const problemas = r.erros.length ? ` ${r.erros.length} ${r.erros.length === 1 ? 'linha com problema fica' : 'linhas com problema ficam'} de fora.` : '';
+    if (!m.length) {
+      return r.erros.length
+        ? avisar('Nada mudou nas linhas lidas', `As ${r.linhas.length} unidades lidas já estão iguais ao espelho.${problemas}`, r.erros)
+        : avisar('Nada para atualizar', 'O espelho já está igual ao mapa do CV.');
+    }
+    const nS = m.filter(x => x.status !== undefined).length, nP = m.filter(x => x.venda !== undefined).length;
+    const descreve = x => {
+      const o = st.original.get(unitKey(x.torre, x.unidade)), partes = [];
+      if (x.status !== undefined) partes.push(`${STATUS[o.status] ?? '—'} → ${STATUS[x.status]}`);
+      if (x.venda !== undefined) partes.push(`${formatBRL(o.venda)} → ${formatBRL(x.venda)}${precoSuspeito(o.venda, x.venda) ? ' (mais de 50%!)' : ''}`);
+      return `Torre ${x.torre} · ${unitLabel(x.unidade)}: ${partes.join(' · ')}`;
+    };
+    const itens = m.slice(0, 15).map(descreve);
+    if (m.length > 15) itens.push(`… e mais ${m.length - 15} ${m.length - 15 === 1 ? 'unidade' : 'unidades'}.`);
+    const ok = await confirmar({
+      titulo: 'Importar mapa do CV?',
+      texto: `${nS} ${nS === 1 ? 'unidade muda' : 'unidades mudam'} de situação e ${nP} ${nP === 1 ? 'preço muda' : 'preços mudam'}.${problemas}`,
+      itens: [...itens, ...r.erros],
+      ok: 'Importar',
+    });
+    if (!ok) return;
+    await gravarComProgresso(m, 'Importando o mapa do CV', email);
+  }
+
   function mudancas() {
     const valido = new Map([...st.editado].filter(([k]) => !st.invalidos.has(k)));
     return diffChanges(st.original, valido);
@@ -179,15 +240,23 @@ export async function startGerente() {
       ok: 'Salvar',
     });
     if (!ok) return;
-    const b = document.getElementById('salvar');
-    b.disabled = true; b.textContent = 'Salvando…';
+    const sessao = await currentSession();
+    await gravarComProgresso(m, 'Salvando alterações', sessao.user.email);
+  }
+
+  // Grava com caixa de progresso e trava de saída da página; ao terminar (ou falhar), recarrega a grade.
+  async function gravarComProgresso(m, titulo, email) {
+    const caixa = progresso(titulo);
+    st.salvando = true;
     try {
-      await saveChanges(st.slug, m);
-      const sessao = await currentSession();
-      await carregar(sessao.user.email);
+      caixa.atualizar(0, m.length);
+      await saveChanges(st.slug, m, (feitas, total) => caixa.atualizar(feitas, total));
+      caixa.fechar(); st.salvando = false;
+      await carregar(email);
     } catch (e) {
-      b.disabled = false; b.textContent = 'Salvar alterações';
-      await avisar('Não foi possível salvar', e.message);
+      caixa.fechar(); st.salvando = false;
+      await avisar('A gravação parou no meio', `${e.gravados ?? 0} de ${m.length} unidades foram gravadas antes do erro: ${e.message} Recarregue e confira; importar de novo completa o que faltou.`);
+      await carregar(email);
     }
   }
 
@@ -197,7 +266,7 @@ export async function startGerente() {
     if (precisaRecarregar(st.usuario, sessao?.user?.id ?? null)) setTimeout(iniciar, 0);
   });
   addEventListener('beforeunload', ev => {
-    if (mudancas().length || st.invalidos.size) { ev.preventDefault(); ev.returnValue = ''; }
+    if (st.salvando || mudancas().length || st.invalidos.size) { ev.preventDefault(); ev.returnValue = ''; }
   });
   iniciar();
 }
