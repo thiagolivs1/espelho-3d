@@ -1,23 +1,57 @@
 // Renderer, câmera, controles de órbita, seleção e enquadramento.
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { Sky } from 'three/addons/objects/Sky.js';
 import { direcaoSol } from './sol.js';
 
 const reduzMovimento = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+const HORIZONTE = '#C9D6E2';   // névoa da cor do horizonte: o chão some no céu sem emenda
 
-export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
+export function createViewer(canvas, { margemDireita = () => 0 } = {}) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 0.95;
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(fundo);
-  scene.fog = new THREE.Fog(fundo, 450, 1500);
+  scene.background = new THREE.Color(HORIZONTE);
+  scene.fog = new THREE.Fog(HORIZONTE, 450, 1500);
 
   const camera = new THREE.PerspectiveCamera(34, 1, 0.5, 4000);
-  scene.add(new THREE.HemisphereLight(0xf6f7ff, 0xb9ae96, 1.4));
-  const sol = new THREE.DirectionalLight(0xfff1dc, 2.2);
+
+  // Céu físico (Sky do three) que acompanha a câmera; o mesmo céu ilumina os vidros pelo mapa de ambiente.
+  const ceu = new Sky();
+  ceu.scale.setScalar(4000);
+  ceu.material.uniforms.turbidity.value = 3;
+  ceu.material.uniforms.rayleigh.value = 2.8;
+  ceu.material.uniforms.mieCoefficient.value = 0.003;
+  ceu.material.uniforms.mieDirectionalG.value = 0.8;
+  ceu.frustumCulled = false;
+  ceu.onBeforeRender = (_r, _s, cam) => ceu.position.copy(cam.position);
+  scene.add(ceu);
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  const cenaCeu = new THREE.Scene(), ceuAmbiente = new Sky();
+  ceuAmbiente.scale.setScalar(100);
+  Object.entries(ceu.material.uniforms).forEach(([k, u]) => { ceuAmbiente.material.uniforms[k].value = u.value; });
+  cenaCeu.add(ceuAmbiente);
+  let ambiente = null, esperaAmbiente = 0;
+  const refazerAmbiente = () => {
+    clearTimeout(esperaAmbiente);
+    esperaAmbiente = setTimeout(() => {
+      ceuAmbiente.material.uniforms.sunPosition.value.copy(ceu.material.uniforms.sunPosition.value);
+      const novo = pmrem.fromScene(cenaCeu, 0, 1, 1000);
+      scene.environment = novo.texture;
+      scene.environmentIntensity = 0.3;
+      if (ambiente) ambiente.dispose();
+      ambiente = novo;
+      pedir();
+    }, 120);
+  };
+
+  scene.add(new THREE.HemisphereLight(0xdfe9f5, 0xb9ad96, 0.45));
+  const sol = new THREE.DirectionalLight(0xfff1dc, 2.6);
   sol.position.set(-60, 140, 90);
   sol.castShadow = true;
   sol.shadow.mapSize.set(2048, 2048);
@@ -38,20 +72,23 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
   // Desenha só quando algo muda (câmera, animação, cores). Parada, a maquete não gasta bateria do celular.
   let raf = 0;
   const pedir = () => { if (!raf) raf = requestAnimationFrame(desenhar); };
-  const irPara = (alvo, posicao) => {
+  const irPara = (alvo, posicao, dur = 700) => {
     if (reduzMovimento()) { controls.target.copy(alvo); camera.position.copy(posicao); tween = null; pedir(); return; }
-    tween = { t0: performance.now(), dur: 700, deAlvo: controls.target.clone(), dePos: camera.position.clone(), alvo, posicao };
+    tween = { t0: performance.now(), dur, deAlvo: controls.target.clone(), dePos: camera.position.clone(), alvo, posicao };
     pedir();
   };
 
   // Tela em pé (celular) precisa de mais distância para caber o mesmo enquadramento.
-  const afastamento = () => (camera.aspect < 0.9 ? 1.8 : 1);
+  let larguraUtil = 1;
+  const afastamento = () => (larguraUtil < 0.9 ? 1.8 : 1);
 
-  function frame(alvo = 'all') {
+  // Condomínio visto de perto do chão, com uma faixa de céu atrás das torres, como nos renders.
+  const VISTA_GERAL = [new THREE.Vector3(0, 14, 0), new THREE.Vector3(105, 72, 225)];
+  function frame(alvo = 'all', dur) {
     if (vista) sairVista();
     const f = afastamento();
     if (alvo === 'all' || !towers.has(alvo)) {
-      irPara(new THREE.Vector3(0, 12, 0), new THREE.Vector3(95 * f, 125 * f, 205 * f));
+      irPara(VISTA_GERAL[0].clone(), VISTA_GERAL[1].clone().multiplyScalar(f > 1 ? 1.45 : 1), dur);   // em pé: torres maiores na tela
       return;
     }
     const t = towers.get(alvo);
@@ -150,10 +187,13 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
   };
   canvas.addEventListener('pointerleave', () => cbs.hover.forEach(cb => cb(null, 0, 0)));
 
+  // Painel flutuando à direita: o centro da cena vai para o meio da área livre (projeção deslocada).
   const ajustar = () => {
-    const el = canvas.parentElement, w = el.clientWidth, h = el.clientHeight;
+    const el = canvas.parentElement, w = el.clientWidth, h = el.clientHeight, p = Math.max(0, Math.min(margemDireita(), w * 0.6));
     renderer.setSize(w, h, false);
-    camera.aspect = w / h;
+    camera.aspect = (w + p) / h;
+    if (p) camera.setViewOffset(w + p, h, p, 0, w, h); else camera.clearViewOffset();
+    larguraUtil = (w - p) / h;
     camera.updateProjectionMatrix();
     pedir();
   };
@@ -175,20 +215,34 @@ export function createViewer(canvas, { fundo = '#E8EBE7' } = {}) {
     if (tween || mexeu) pedir();
   }
   controls.addEventListener('change', pedir);
-  camera.position.set(95, 125, 205);
+  camera.position.copy(VISTA_GERAL[1]);
+  controls.target.copy(VISTA_GERAL[0]);
+
+  // Entrada depois da abertura: parte de longe e baixo e pousa na vista geral.
+  function voarEntrada() {
+    const f = afastamento();
+    camera.position.set(-260 * f, 34 * f, 560 * f);
+    controls.target.set(0, 40, 0);
+    frame('all', 2400);
+  }
   pedir();
 
   // Sol: posição real (azimute/elevação) convertida para a cena; à noite fica só uma luz fraca.
+  const corBaixa = new THREE.Color('#FFC890'), corAlta = new THREE.Color('#FFF4E6');
   function setSol(pos, rotacaoGraus = 0) {
     const [x, y, z] = direcaoSol(pos, rotacaoGraus);
     sol.position.set(x * 160, Math.max(y * 160, 3), z * 160);
-    sol.intensity = pos.elevacao > 0 ? 0.5 + 1.9 * Math.min(1, pos.elevacao / 35) : 0.12;
+    const alto = Math.min(1, Math.max(0, pos.elevacao) / 35);
+    sol.intensity = pos.elevacao > 0 ? 0.8 + 2.2 * alto : 0.15;
+    sol.color.copy(corBaixa).lerp(corAlta, alto);
+    ceu.material.uniforms.sunPosition.value.set(x, Math.max(y, 0.02), z);
+    refazerAmbiente();
     pedir();
   }
 
   return {
     scene, camera, renderer, controls, frame, focusUnit, setSol, frameTo, setArredores,
-    invalidate: pedir,
+    invalidate: pedir, voarEntrada, reajustar: ajustar,
     setTowers: m => { towers = m; },
     onPick: cb => cbs.pick.push(cb),
     onHover: cb => cbs.hover.push(cb),

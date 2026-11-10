@@ -26,6 +26,21 @@ export function towerTransform(implantacao, torre) {
 // Lado norte, oeste→leste: 4 3 [núcleo] 2 1. Lado sul, oeste→leste: 5 6 [núcleo] 7 8.
 const ORDEM = { 4: 0, 3: 1, 2: 2, 1: 3, 5: 0, 6: 1, 7: 2, 8: 3 };
 
+// Desenho da fachada de uma unidade, como nos renders aprovados. A textura padrão tem a varanda à direita de quem olha
+// de fora; espelhar = varanda à esquerda. A varanda fica sempre do lado do núcleo.
+export function varianteFachada({ coluna, andar, pavimentos }) {
+  const slot = ORDEM[coluna], norte = coluna <= 4, externa = slot === 0 || slot === 3;
+  const inicioCoroa = pavimentos - (externa ? 4 : 6);
+  return {
+    frente: norte ? 'norte' : 'sul',
+    ladoExposto: slot === 0 ? 'oeste' : slot === 3 ? 'leste' : null,
+    espelhar: norte ? slot < 2 : slot >= 2,
+    coroa: andar >= inicioCoroa,
+    faixa: andar === inicioCoroa || andar === inicioCoroa - 6,
+    painel: (andar + slot) % 2,
+  };
+}
+
 export function unitBox(torreSpec, coluna, andar, alturaPiso) {
   const { largura, profundidade, nucleo } = torreSpec;
   const w = (largura - nucleo) / 4, d = profundidade / 2, h = alturaPiso - 0.12;

@@ -101,6 +101,16 @@ test('filtro visível na maquete: unidade fora do filtro fica translúcida e bem
   assert.equal(corDaUnidade({ ...u, status: null }, 'disponibilidade', null, cores).cor, '#BDB8AE');
 });
 
+test('fachada real sem login; com situação, fachada neutra tingida pela cor', () => {
+  const cores = { fachada: { base: '#EEEAE3', faixa: '#CDBDA6', detalhe: '#5E3B28' } };
+  const u = { key: 'u-1-101', coluna: 1, status: 'D' };
+  assert.deepEqual(corDaUnidade(u, 'tabela', null, cores), { cor: '#FFFFFF', opacidade: 1, mapa: 'real' });
+  assert.deepEqual(corDaUnidade(u, 'fachada', null, cores), { cor: '#FFFFFF', opacidade: 1, mapa: 'real' });
+  assert.equal(corDaUnidade(u, 'disponibilidade', null, cores).mapa, 'neutro');
+  assert.equal(corDaUnidade(u, 'fachada', new Set(['outra']), cores).mapa, 'real');
+  assert.equal(corDaUnidade(u, 'disponibilidade', new Set(['outra']), cores).mapa, 'neutro');
+});
+
 test('gravação em lotes: no máximo 6 ao mesmo tempo, com progresso', async () => {
   let ativos = 0, pico = 0; const progresso = [];
   const gravar = async () => { ativos++; pico = Math.max(pico, ativos); await new Promise(r => setTimeout(r, 2)); ativos--; };

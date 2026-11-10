@@ -1,6 +1,6 @@
 // Página de um empreendimento: maquete 3D + painel. Link aberto mostra preços; login mostra a situação.
 import { createViewer } from './scene/viewer.js';
-import { buildTowers, paintUnits } from './scene/building.js';
+import { buildTowers, paintUnits, destacarUnidade } from './scene/building.js';
 import { buildSite } from './scene/site.js';
 import { horaSolar, posicaoSol, diaDoAno } from './scene/sol.js';
 import { mergeUnits, summarize, filterUnits, isStale, AVISO_PRECOS } from './model.js';
@@ -10,6 +10,8 @@ import { mountLogin } from './ui/login.js';
 import { abrirTrocaSenha } from './ui/senha.js';
 import { montarVista } from './ui/vista-ui.js';
 import { abrirGaleria } from './ui/galeria.js';
+import { montarAbertura } from './ui/abertura.js';
+import { aplicarLogo } from './ui/logo.js';
 import { toMeters } from './scene/geometry.js';
 import { supabase, signOut, currentSession, currentRole, fetchPrices, fetchStatuses, fetchLastUpdate } from './supabase.js';
 
@@ -71,11 +73,17 @@ export async function startPage(slug) {
   raiz.setProperty('--marca', pkg.cores.marca);
   raiz.setProperty('--escuro', pkg.cores.escuro);
   raiz.setProperty('--paper', pkg.cores.fundo);
+  if (pkg.cores.marca2) raiz.setProperty('--marca2', pkg.cores.marca2);
+  if (pkg.cores.texto) raiz.setProperty('--texto', pkg.cores.texto);
   $('hero').innerHTML = renderHero(pkg, base);
   $('rodape').textContent = entorno ? `${pkg.rodape} Entorno ${entorno.fonte}.` : pkg.rodape;
   $('legend').innerHTML = renderLegend();
 
-  const viewer = createViewer($('gl'), { fundo: pkg.cores.fundo });
+  // No computador o painel flutua sobre a maquete: a cena se centra na área livre à esquerda dele.
+  const viewer = createViewer($('gl'), { margemDireita: () => (isM() ? 0 : document.querySelector('.panel').offsetWidth + 16) });
+  $('hero').querySelectorAll('.logo, .construtora').forEach(el => aplicarLogo(el, pkg.logos));
+  $('hero').querySelector('.ver-fotos')?.addEventListener('click', () =>
+    abrirGaleria(pkg.galeria.map(f => ({ src: base + f.src, legenda: f.legenda }))));
   let site;
   try { site = buildSite(pkg, entorno); } catch (e) { console.warn('Entorno ignorado:', e); site = buildSite(pkg); }
   viewer.scene.add(site);
@@ -176,9 +184,11 @@ export async function startPage(slug) {
     viewer.frame(b.dataset.v === 'all' ? 'all' : Number(b.dataset.v));
   };
   const renderModos = () => {
-    const modos = st.logado ? [['disponibilidade', 'Disponibilidade'], ['fachada', 'Fachada']] : [['tabela', 'Tabela'], ['fachada', 'Fachada']];
+    // Sem login a maquete mostra só a fachada real: um botão sozinho não serve para nada.
+    const modos = st.logado ? [['disponibilidade', 'Disponibilidade'], ['fachada', 'Fachada']] : [['tabela', 'Fachada']];
     if (!modos.some(([m]) => m === st.modo)) st.modo = modos[0][0];
     $('modos').innerHTML = modos.map(([m, r]) => `<button data-m="${m}" aria-pressed="${m === st.modo}">${r}</button>`).join('');
+    $('modos').hidden = modos.length < 2;
   };
   $('modos').onclick = ev => { const b = ev.target.closest('[data-m]'); if (b) { st.modo = b.dataset.m; atualizar(); } };
 
@@ -197,7 +207,7 @@ export async function startPage(slug) {
   // ---------- seleção ----------
   const destacar = (u, liga) => {
     const m = built.meshesByKey.get(u.key); if (!m) return;
-    m.material.emissive.setHex(liga ? 0x6a4210 : 0x000000);
+    destacarUnidade(m, liga, pkg.cores.marca);
     viewer.invalidate();
   };
   function selecionar(u, focar) {
@@ -233,11 +243,12 @@ export async function startPage(slug) {
     if (!st.sel) return;
     d.classList.remove('empty');
     d.innerHTML = renderDetail(st.sel, { pkg, base, logado: st.logado });
-    d.querySelector('.pl-open')?.addEventListener('click', ev => {
-      const b = ev.currentTarget;
-      abrirGaleria([{ src: b.dataset.src, legenda: `Planta · ${b.dataset.legenda}` }], 0, { ilustrativa: false });
+    d.querySelector('.pl-open')?.addEventListener('click', () => {
+      const tip = pkg.tipologias[st.sel.tipologia];
+      abrirGaleria([{ src: base + tip.planta, legenda: `Planta humanizada · ${tip.legenda}` },
+        ...(tip.plantaTecnica ? [{ src: base + tip.plantaTecnica, legenda: `Planta técnica com medidas · ${tip.legenda}` }] : [])]);
     });
-    const persp = (pkg.tipologias[st.sel.tipologia]?.perspectivas || []).map(src => ({ src: base + src, legenda: `Apartamento ${st.sel.tipologia}` }));
+    const persp = (pkg.tipologias[st.sel.tipologia]?.perspectivas || []).map(f => ({ src: base + f.src, legenda: `${f.legenda} · tipo ${st.sel.tipologia}` }));
     d.querySelectorAll('[data-persp]').forEach(b => { b.onclick = () => abrirGaleria(persp, Number(b.dataset.persp)); });
     d.querySelector('[data-vista]').onclick = () => {
       vistaUi.abrir(st.sel);
@@ -259,7 +270,7 @@ export async function startPage(slug) {
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'spot'; b.innerHTML = `<i>+</i><span></span>`;
     b.querySelector('span').textContent = p.nome; b.setAttribute('aria-label', `Fotos: ${p.nome}`);
-    b.onclick = () => abrirGaleria(p.imagens.map(src => ({ src: base + src, legenda: p.nome })));
+    b.onclick = () => abrirGaleria(p.imagens.map(f => ({ src: base + f.src, legenda: f.legenda })));
     camadaPinos.append(b);
     return { b, x, z };
   });
@@ -351,7 +362,7 @@ export async function startPage(slug) {
   }
 
   atualizar();
-  viewer.frame('all');
+  if (!montarAbertura({ pkg, base, aoEntrar: () => viewer.voarEntrada() })) viewer.frame('all');
   doHash();
   await Promise.all([carregarPrecos(), carregarAcesso()]);
   atualizar();

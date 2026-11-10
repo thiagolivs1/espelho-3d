@@ -24,18 +24,21 @@
   ],
   "rodape": "Modelo demonstrativo. Implantação, colunas, metragens e plantas conforme o Módulo de Apresentação do Fantastique Prime II. Volumetria ilustrativa. Preços da Tabela 60X Lançamento Prime II, sujeitos a alteração sem aviso prévio.",
   "cores": {
-    "marca": "#9C6A3C",
-    "escuro": "#3B2A20",
-    "fundo": "#E8EBE7",
+    "marca": "#E08A52",
+    "escuro": "#17202C",
+    "fundo": "#17202C",
     "fachada": {
-      "base": "#EEE9E1",
-      "faixa": "#D5C7B2",
-      "detalhe": "#B5A68A"
-    }
+      "base": "#EEEAE3",
+      "faixa": "#CDBDA6",
+      "detalhe": "#5E3B28"
+    },
+    "marca2": "#C9672F",
+    "texto": "#F2E3D3"
   },
   "logos": {
     "empreendimento": "img/logo-fantastique.jpg",
-    "construtora": "img/logo-fan.jpg"
+    "construtora": "img/logo-fan.jpg",
+    "fundoEscuro": true
   },
   "simulador": "simulador/",
   "geo": {
@@ -191,7 +194,7 @@
       },
       {
         "nome": "Campinho",
-        "tipo": "verde",
+        "tipo": "quadra",
         "poligono": [
           [
             930,
@@ -289,74 +292,196 @@
         ],
         "largura": 12
       }
-    ]
+    ],
+    "portaria": {
+      "px": [
+        690,
+        120
+      ]
+    }
   },
   "tipologias": {
     "A1 Garden": {
-      "planta": "img/plantas/a1-garden.jpg",
+      "planta": "img/aptos/a-apartamento.jpg",
       "legenda": "Tipo A1 Garden · 3 quartos · 68,40 m²",
       "perspectivas": [
-        "img/aptos/tipo-a-1.jpg",
-        "img/aptos/tipo-a-2.jpg",
-        "img/aptos/tipo-a-3.jpg",
-        "img/aptos/tipo-a-4.jpg",
-        "img/aptos/tipo-a-5.jpg"
-      ]
+        {
+          "src": "img/lazer/garden.jpg",
+          "legenda": "Garden privativo"
+        },
+        {
+          "src": "img/aptos/a-sala.jpg",
+          "legenda": "Sala"
+        },
+        {
+          "src": "img/aptos/a-cozinha.jpg",
+          "legenda": "Cozinha"
+        },
+        {
+          "src": "img/aptos/a-varanda.jpg",
+          "legenda": "Varanda"
+        },
+        {
+          "src": "img/aptos/a-suite.jpg",
+          "legenda": "Suíte"
+        },
+        {
+          "src": "img/aptos/a-quarto-1.jpg",
+          "legenda": "Quarto 1"
+        },
+        {
+          "src": "img/aptos/a-quarto-2.jpg",
+          "legenda": "Quarto 2"
+        },
+        {
+          "src": "img/aptos/a-wc-casal.jpg",
+          "legenda": "Banheiro da suíte"
+        },
+        {
+          "src": "img/aptos/a-wc-social.jpg",
+          "legenda": "Banheiro social"
+        }
+      ],
+      "plantaTecnica": "img/plantas/a1-garden.jpg"
     },
     "B Garden": {
-      "planta": "img/plantas/b-garden.jpg",
+      "planta": "img/aptos/b-apartamento.jpg",
       "legenda": "Tipo B Garden · 2 quartos · planta de referência (B1)",
       "perspectivas": [
-        "img/aptos/tipo-b-1.jpg",
-        "img/aptos/tipo-b-2.jpg",
-        "img/aptos/tipo-b-3.jpg",
-        "img/aptos/tipo-b-4.jpg",
-        "img/aptos/tipo-b-5.jpg"
-      ]
+        {
+          "src": "img/lazer/garden.jpg",
+          "legenda": "Garden privativo"
+        },
+        {
+          "src": "img/aptos/b-sala.jpg",
+          "legenda": "Sala"
+        },
+        {
+          "src": "img/aptos/b-cozinha.jpg",
+          "legenda": "Cozinha"
+        },
+        {
+          "src": "img/aptos/b-varanda.jpg",
+          "legenda": "Varanda"
+        },
+        {
+          "src": "img/aptos/b-quarto-1.jpg",
+          "legenda": "Quarto 1"
+        },
+        {
+          "src": "img/aptos/b-quarto-2.jpg",
+          "legenda": "Quarto 2"
+        },
+        {
+          "src": "img/aptos/b-wc-casal.jpg",
+          "legenda": "Banheiro da suíte"
+        },
+        {
+          "src": "img/aptos/b-wc-social.jpg",
+          "legenda": "Banheiro social"
+        }
+      ],
+      "plantaTecnica": "img/plantas/b-garden.jpg"
     },
     "B-PNE Garden": {
-      "planta": "img/plantas/b-pne-garden.jpg",
+      "planta": "img/aptos/b-pne-apartamento.jpg",
       "legenda": "Tipo B-PNE Garden · 2 quartos · planta de referência (B-PNE1)",
       "perspectivas": [
-        "img/aptos/tipo-b-1.jpg",
-        "img/aptos/tipo-b-2.jpg",
-        "img/aptos/tipo-b-3.jpg",
-        "img/aptos/tipo-b-4.jpg",
-        "img/aptos/tipo-b-5.jpg"
-      ]
+        {
+          "src": "img/lazer/garden.jpg",
+          "legenda": "Garden privativo"
+        },
+        {
+          "src": "img/aptos/b-pne-suite.jpg",
+          "legenda": "Suíte adaptada"
+        }
+      ],
+      "plantaTecnica": "img/plantas/b-pne-garden.jpg"
     },
     "A": {
-      "planta": "img/plantas/tipo-a.jpg",
+      "planta": "img/aptos/a-apartamento.jpg",
       "legenda": "Tipo A · 3 quartos · 59,93 m²",
       "perspectivas": [
-        "img/aptos/tipo-a-1.jpg",
-        "img/aptos/tipo-a-2.jpg",
-        "img/aptos/tipo-a-3.jpg",
-        "img/aptos/tipo-a-4.jpg",
-        "img/aptos/tipo-a-5.jpg"
-      ]
+        {
+          "src": "img/aptos/a-sala.jpg",
+          "legenda": "Sala"
+        },
+        {
+          "src": "img/aptos/a-cozinha.jpg",
+          "legenda": "Cozinha"
+        },
+        {
+          "src": "img/aptos/a-varanda.jpg",
+          "legenda": "Varanda"
+        },
+        {
+          "src": "img/aptos/a-suite.jpg",
+          "legenda": "Suíte"
+        },
+        {
+          "src": "img/aptos/a-quarto-1.jpg",
+          "legenda": "Quarto 1"
+        },
+        {
+          "src": "img/aptos/a-quarto-2.jpg",
+          "legenda": "Quarto 2"
+        },
+        {
+          "src": "img/aptos/a-wc-casal.jpg",
+          "legenda": "Banheiro da suíte"
+        },
+        {
+          "src": "img/aptos/a-wc-social.jpg",
+          "legenda": "Banheiro social"
+        }
+      ],
+      "plantaTecnica": "img/plantas/tipo-a.jpg"
     },
     "B": {
-      "planta": "img/plantas/tipo-b.jpg",
+      "planta": "img/aptos/b-apartamento.jpg",
       "legenda": "Tipo B · 2 quartos · 51,66 m²",
       "perspectivas": [
-        "img/aptos/tipo-b-1.jpg",
-        "img/aptos/tipo-b-2.jpg",
-        "img/aptos/tipo-b-3.jpg",
-        "img/aptos/tipo-b-4.jpg",
-        "img/aptos/tipo-b-5.jpg"
-      ]
+        {
+          "src": "img/aptos/b-sala.jpg",
+          "legenda": "Sala"
+        },
+        {
+          "src": "img/aptos/b-cozinha.jpg",
+          "legenda": "Cozinha"
+        },
+        {
+          "src": "img/aptos/b-varanda.jpg",
+          "legenda": "Varanda"
+        },
+        {
+          "src": "img/aptos/b-quarto-1.jpg",
+          "legenda": "Quarto 1"
+        },
+        {
+          "src": "img/aptos/b-quarto-2.jpg",
+          "legenda": "Quarto 2"
+        },
+        {
+          "src": "img/aptos/b-wc-casal.jpg",
+          "legenda": "Banheiro da suíte"
+        },
+        {
+          "src": "img/aptos/b-wc-social.jpg",
+          "legenda": "Banheiro social"
+        }
+      ],
+      "plantaTecnica": "img/plantas/tipo-b.jpg"
     },
     "B-PNE": {
-      "planta": "img/plantas/b-pne.jpg",
+      "planta": "img/aptos/b-pne-apartamento.jpg",
       "legenda": "Tipo B-PNE · 2 quartos · 51,66 m²",
       "perspectivas": [
-        "img/aptos/tipo-b-1.jpg",
-        "img/aptos/tipo-b-2.jpg",
-        "img/aptos/tipo-b-3.jpg",
-        "img/aptos/tipo-b-4.jpg",
-        "img/aptos/tipo-b-5.jpg"
-      ]
+        {
+          "src": "img/aptos/b-pne-suite.jpg",
+          "legenda": "Suíte adaptada"
+        }
+      ],
+      "plantaTecnica": "img/plantas/b-pne.jpg"
     }
   },
   "pontosLazer": [
@@ -367,7 +492,10 @@
         323
       ],
       "imagens": [
-        "img/lazer/salao-de-jogos.jpg"
+        {
+          "src": "img/lazer/salao-de-jogos.jpg",
+          "legenda": "Salão de jogos"
+        }
       ]
     },
     {
@@ -377,7 +505,10 @@
         323
       ],
       "imagens": [
-        "img/lazer/salao-de-festas.jpg"
+        {
+          "src": "img/lazer/salao-de-festas.jpg",
+          "legenda": "Salão de festas"
+        }
       ]
     },
     {
@@ -387,7 +518,10 @@
         323
       ],
       "imagens": [
-        "img/lazer/deck.jpg"
+        {
+          "src": "img/lazer/deck.jpg",
+          "legenda": "Deck com churrasqueira"
+        }
       ]
     },
     {
@@ -397,7 +531,10 @@
         247
       ],
       "imagens": [
-        "img/lazer/fitness.jpg"
+        {
+          "src": "img/lazer/fitness.jpg",
+          "legenda": "Fitness"
+        }
       ]
     },
     {
@@ -407,7 +544,10 @@
         212
       ],
       "imagens": [
-        "img/lazer/coworking.jpg"
+        {
+          "src": "img/lazer/coworking.jpg",
+          "legenda": "Coworking"
+        }
       ]
     },
     {
@@ -417,7 +557,10 @@
         181
       ],
       "imagens": [
-        "img/lazer/mini-market.jpg"
+        {
+          "src": "img/lazer/mini-market.jpg",
+          "legenda": "Mini-market"
+        }
       ]
     },
     {
@@ -427,8 +570,134 @@
         606
       ],
       "imagens": [
-        "img/lazer/churrasqueiras.jpg"
+        {
+          "src": "img/lazer/churrasqueiras.jpg",
+          "legenda": "Churrasqueiras"
+        }
+      ]
+    },
+    {
+      "nome": "Piscina",
+      "px": [
+        912,
+        348
+      ],
+      "imagens": [
+        {
+          "src": "img/lazer/piscina.jpg",
+          "legenda": "Piscina"
+        },
+        {
+          "src": "img/lazer/vista-geral.jpg",
+          "legenda": "Vista geral do lazer"
+        }
+      ]
+    },
+    {
+      "nome": "Campinho",
+      "px": [
+        945,
+        215
+      ],
+      "imagens": [
+        {
+          "src": "img/lazer/campinho.jpg",
+          "legenda": "Campinho"
+        }
+      ]
+    },
+    {
+      "nome": "Playground",
+      "px": [
+        802,
+        206
+      ],
+      "imagens": [
+        {
+          "src": "img/lazer/playground.jpg",
+          "legenda": "Playground"
+        },
+        {
+          "src": "img/lazer/pet.jpg",
+          "legenda": "Pet place"
+        }
+      ]
+    },
+    {
+      "nome": "Portaria",
+      "px": [
+        690,
+        120
+      ],
+      "imagens": [
+        {
+          "src": "img/lazer/guarita.jpg",
+          "legenda": "Portaria e fachada"
+        }
       ]
     }
-  ]
+  ],
+  "galeria": [
+    {
+      "src": "img/lazer/guarita.jpg",
+      "legenda": "Portaria e fachada"
+    },
+    {
+      "src": "img/lazer/vista-aerea.jpg",
+      "legenda": "Vista aérea do condomínio"
+    },
+    {
+      "src": "img/lazer/vista-geral.jpg",
+      "legenda": "Lazer: piscina, campinho e salões"
+    },
+    {
+      "src": "img/lazer/piscina.jpg",
+      "legenda": "Piscina"
+    },
+    {
+      "src": "img/lazer/deck.jpg",
+      "legenda": "Deck com churrasqueira"
+    },
+    {
+      "src": "img/lazer/churrasqueiras.jpg",
+      "legenda": "Churrasqueiras"
+    },
+    {
+      "src": "img/lazer/salao-de-festas.jpg",
+      "legenda": "Salão de festas"
+    },
+    {
+      "src": "img/lazer/salao-de-jogos.jpg",
+      "legenda": "Salão de jogos"
+    },
+    {
+      "src": "img/lazer/fitness.jpg",
+      "legenda": "Fitness"
+    },
+    {
+      "src": "img/lazer/coworking.jpg",
+      "legenda": "Coworking"
+    },
+    {
+      "src": "img/lazer/mini-market.jpg",
+      "legenda": "Mini-market"
+    },
+    {
+      "src": "img/lazer/campinho.jpg",
+      "legenda": "Campinho"
+    },
+    {
+      "src": "img/lazer/playground.jpg",
+      "legenda": "Playground"
+    },
+    {
+      "src": "img/lazer/pet.jpg",
+      "legenda": "Pet place"
+    },
+    {
+      "src": "img/lazer/garden.jpg",
+      "legenda": "Garden privativo"
+    }
+  ],
+  "abertura": "img/abertura.jpg"
 }

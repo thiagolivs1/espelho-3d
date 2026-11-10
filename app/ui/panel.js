@@ -13,6 +13,7 @@ export function renderHero(pkg, base) {
       <p class="end">${esc(pkg.endereco)}</p>
       <div class="facts">${pkg.fatos.map(f => `<div><b>${esc(f.valor)}</b>${esc(f.rotulo)}</div>`).join('')}</div>
       <img class="construtora" src="${base}${esc(pkg.logos.construtora)}" alt="${esc(pkg.construtora)}">
+      ${pkg.galeria?.length ? `<button type="button" class="btn ghost ver-fotos">Ver ${pkg.galeria.length} fotos do condomínio</button>` : ''}
     </div>`;
 }
 
@@ -54,9 +55,9 @@ export function renderDetail(u, { pkg, base, logado }) {
     ${aviso}
     ${tip.planta ? `<figure class="planta"><button class="pl-open" type="button" data-src="${base}${esc(tip.planta)}" data-legenda="${esc(tip.legenda)}">
       <img src="${base}${esc(tip.planta)}" alt="Planta ${esc(tip.legenda)}" loading="lazy"></button>
-      <figcaption>${esc(tip.legenda)} · toque para ampliar</figcaption></figure>` : ''}
-    ${tip.perspectivas?.length ? `<div class="persp"><p class="typo">Perspectivas do apartamento</p><div class="persp-row">${tip.perspectivas.map((src, i) =>
-      `<button type="button" class="persp-b" data-persp="${i}" aria-label="Perspectiva ${i + 1}"><img src="${base}${esc(src)}" alt="" loading="lazy"></button>`).join('')}</div></div>` : ''}
+      <figcaption>${esc(tip.legenda)}. Toque para ampliar${tip.plantaTecnica ? ' e ver a planta técnica com medidas' : ''}.</figcaption></figure>` : ''}
+    ${tip.perspectivas?.length ? `<div class="persp"><p class="typo">Perspectivas do apartamento</p><div class="persp-row">${tip.perspectivas.map((f, i) =>
+      `<button type="button" class="persp-b" data-persp="${i}" aria-label="${esc(f.legenda)}"><img src="${base}${esc(f.src)}" alt="" loading="lazy"><span>${esc(f.legenda)}</span></button>`).join('')}</div></div>` : ''}
     <div class="actions">
       <button class="btn ghost" type="button" data-vista>Ver a vista desta unidade</button>
       <a class="btn" href="${base}${esc(pkg.simulador)}#${u.key}" target="_blank" rel="noopener">Simular fluxo desta unidade</a>
